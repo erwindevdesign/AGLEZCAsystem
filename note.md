@@ -3,7 +3,7 @@ Index: Aglezca manual
 1. Visión general / overview
 2. Flujo de trabajo / workflow
 3. seguimiento de O.P. / Asana
-4. Formularios / buenas practicas de docuemntaci�n
+4. Formularios / buenas practicas de docuemntación
 5. formaciones
 6. procesoS de impresión / CORTE / SAUJE / LAMIANDO
 7. trazabilidad e material procesado
@@ -112,6 +112,27 @@ ___
 
 
 
+MANTT
+
+- Fecha
+- ploter / equipo ..
+- Contador de tinta
+- Hora inicial
+- Hora final
+- Consumibles / componentes
+	- Kit de limpieza (SPC-0369)
+	- Toallas para limpieza industrial
+	- Lubricante
+- Realizo Observaciones
+-  Tem & Hum ..
+- 1ra, 2da, 3ra - medición 
+- realizo 	
+- observaciones
+
+
+
+
+
 
 
 
@@ -121,3 +142,6 @@ INVESTIGACIÓN
 -- como insertar una nota en un documento técnico.
 
 -
+
+
+

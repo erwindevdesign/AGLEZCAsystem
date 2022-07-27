@@ -1,22 +1,16 @@
-# AGLEZCAsystem 1.0 :card_index:
-# Sistema de gestión de datos en producción AGLEZCA S.A. de C.V. Mexico
+# AGLEZCAsystem :card_index:
+# Sistema de gestión de datos en producción AGLEZCA S.A. de C.V. (México)
 
 ## Indice
 
 1. [Visión general y alcances](#id1)
+2. [Sistema de gestión de datos en producción AGLEZCA S.A. de C.V.](#id2)
 
 ## Visión general y alcances <a name="id1"></a>
 
-El sistema de gestión de datos, al cual denominaremos como - **SGD** -, se desarrolla como metodo para la recopilación, el almacenamiento y la extracción de datos para la creación de indicadores clave **(KPIś)** y el alcance de objetivos y resultados en base a la integración de la información en la toma de desiciones en un entorno de producción real.
+El sistema de gestión de datos - **SGD** -, se desarrolla como metodo para la recopilación, el almacenamiento y la consulta de datos para el desarrollo de indicadores clave **(KPI´s)** y el alcance de objetivos y resultados **(OKR´s)** en funsion de la integración de la información en la toma de desiciones en un entorno de producción real.
 
-
-
-La implementación de formularios para la recabación de datos se realiza en una primara fase en hojas de calculo haciendo uso de macros creados con **VBA** (visual basic for application / macros). Esto nos permitira normailizar la base de datos relacionando entidades y dependencias depurando la data inecesaria para estructurar un sistema más robusto minimizando el versionamiento en codigo fuerte.
-
-En su inicio la implementación y validación del proyecto se realizo con formularios de seguimiento de producción, consumo, seguridad ocupacional y mantenimientos en versiones Alpha
-
-SGDP (sistema de gestion de datos en produción
-
+La implementación de formularios para la recabación de datos se realiza en hojas de calculo Excel haciendo uso de macros creadas en **VBA** (visual basic for application). Esto nos permitira normailizar la base de datos relacionando entidades y dependencias, aún desconocidas por los usuario, eliminando información inecesaria para estructurar un sistema de gestión que pueda ser gestionado por el personal operativo del área dando seguimiento a los siguientes procesos y requerimientos de gestión:
 
 > Seguimiento de producción
 
@@ -42,18 +36,43 @@ SGDP (sistema de gestion de datos en produción
 	- guantes
 	- faja *
 
-> Seguimeinto de mantenimientos
+> Seguimiento de mantenimientos en equipos
 
 	- Mantt. de uso / residuos
 	- Mantt. preventivo
 	- Mantt. correctivo
 	- Temp. & Hum.
 
+SGDP (sistema de gestion de datos en produción)
 
-#### Sistema de gestión de datos en producción AGLEZCA S.A. de C.V. Mexico lang=(es). :floppy_disk: <a name="id1"></a>
+Se desarrolla formularios para cada requerimiento con la siguiente nomenclatura técnica:
 
-> Desarrollo de sistema de gestión de datos en un ecosistema real de producción.
-> Implementado en *Impresos AGLEZCA S.A. de C.V.* Cuernavaca Mor. Mexico (2022)
+> Seguimiento de producción (RP: registro de producción)
+
+	- RP-1-v0.0.1.xlsm
+	- RP-2-v0.0.1.xlsm
+	- RP-3-v0.0.1.xlsm
+	- RP-UV-v0.0.1.xlsm
+
+> Seguimiento de consumo (RC: registro de consumo)
+
+	- RC-MAT-Rollo-v0.0.1.xlsm
+
+> Uso de  EPP (RU: registro de uso)
+
+	- RU-EPP-BANDAGE-v0.0.1.xlsm
+	- RU-EPP-GLASSES-v0.0.1.xlsm
+	- RU-EPP-GLOVES-v0.0.1.xlsm
+	- RU-EPP-MASK-v0.0.1.xlsm
+	- RU-EPP-PLUG-v0.0.1.xlsm
+	- RU-EPP-SHOD-v0.0.1.xlsm
+
+> Seguimiento de mantenimientos en equipos (RM: registro de matenimiento)
+
+	- RM-U-PLOT-JV33-v0.0.1.xlsm
+
+
+#### Sistema de gestión de datos en producción. :floppy_disk: <a name="id2"></a>
 
 <!-- COMENTARIOS -->
 
@@ -61,19 +80,21 @@ SGDP (sistema de gestion de datos en produción
 
     1. [] > Versionamiento de sistema
     2. [] Documentación de sistema 
+		- instructivo de uso de plataforma ASANA
+    	- instructivo de uso de formularios de recabación de data
+    	-  indicadores, metricas, rubricas y graficación.
     3. [] > Formularios
     
 
-    - / instructivo de uso de plataforma ASANA
-    - instructivo de uso de formularios de recabación de data
-    -  indicadores, metricas, rubricas y graficación.
+    
 
 
 1. Versionamiento de sistema. :pushpin: 
 
     * Versionamiento de sistema ***"Alpha"*** actual. 
 	> (Alapha, Beta, RC)
-    * Usar la estructura de ramas en github para la organización de las versiones en prueba.
+    * Usar la estructura de ramas en github para la gestión de versiones en prueba.
+		
 		* main = carpeta con versión en producción (final/respaldo), - **v1.0** -
 		* develop = carpeta con versión en desarrollo (creación) - **v0.0.11** -
 		* relase = carpeta con versión en depliegue para optimización y/o prueba en uso real para depuración de interfase (prueba) - **v0.1** -
@@ -87,3 +108,14 @@ SGDP (sistema de gestion de datos en produción
     * Documentación de sistema.* "Alpha".
 
 3. Formularios. :speech_balloon:
+
+
+
+
+
+
+
+
+
+> Desarrollo de sistema de gestión de datos en un ecosistema real de producción.
+> Implementado en *Impresos AGLEZCA S.A. de C.V.* Cuernavaca Mor. Mexico (2022)
