@@ -10,6 +10,38 @@ Index: Aglezca manual
 8. mantenimientos
 9. Fuentes y referencias
 
+~~~
+<ul class="list_index">
+
+    <!-- <li>Plataforma <b>asana</b></li> -->
+
+    <li>Visión general</li>
+
+    <li>Flujo de trabajo</li>
+
+    <li>Seguimiento del estado de O.P.</li>
+
+    <li>Sistema de Gestión de Datos en Producción</li>
+
+    <!-- <li>Espesificaciones de archivo</li> -->
+
+    <li>Procesos</li>
+
+    <li>Trazabilidad de material</li>
+
+    <li>Mantenimiento</li>
+
+    <!-- <li>Indicadores</li> -->
+
+    <!-- <li>Procesos de reimpresión, registro 
+    de merma y exedente</li> -->
+
+    <!-- <li>Fuentes y referencias</li> -->
+
+</ul>
+
+~~~
+
 --  indicadores
 --  proceso de solicitudde reimpresión por merma o daño a material
 --  registro de materiales sobrantes y merma para indicadores.
@@ -129,19 +161,33 @@ MANTT
 - realizo 	
 - observaciones
 
-
-
-
-
-
-
-
 INVESTIGACIÓN
 
 -- COMO SE ESTRUCTURA UN DOCUMENTO TÉCNICO MANUAL.
 -- como insertar una nota en un documento técnico.
 
--
 
 
+# Seguimiento del estado de O.P.
 
+- Entrada de O.P. 
+
+- Firmar O.P. de recibido con fecha y hora.
+
+- Registro de O.P. en ASANA / columna de Nuevas Solicitudes./ agregar imagen referencial y espesificaciones de O.P. / documentar fecha y hora de entrada.
+
+- Una vez iniciando la orden, desplazar a la columna de En proceso.
+
+- Si el archivo indicado en la O.P. requiere de formación para impresión y/o se encuentra a espera de alguna espesificación, se desplazarta a la columanda **Diseño / especificación en curso** documentando fecha y hora.
+
+- Si la O.P. se encuentra fuera de los tiempos de entrega indicados, se desplazara a la columna de atrazos, docuemntando fecha y hora.
+
+- Si el estado de la orden de producción pasa a URGENTE se desplazara a la comuna de Prioridades/Urgencias, docuemntando fecha y hora.
+
+- Una vez entragado el material identifiacado a proceso de acabado, se colocara en la columna Acabado, docuemntando fecha y hora.
+
+- Una vex entregada a Logistica para su disposición al cliente, el elemento se desplazara a la columna Completados.
+
+# Sistema de Gestión de Datos en Producción
+
+- 
