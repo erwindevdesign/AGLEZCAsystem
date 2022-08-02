@@ -89,6 +89,20 @@
         list-style: none;
         font-weight: bold;
       }
+
+      .list-content{
+        display: flex;
+        width: 100%;
+        font-size: 1.2rem;
+        font-family:Arial, Helvetica, sans-serif;
+        font-weight: bold;
+      }
+
+      .list-content img{
+        
+        /* background-color: aquamarine; */
+      }
+
     </style>
   </head>
   <body>
@@ -105,14 +119,28 @@
         <div class="index_conteiner">
           <ul class="list_index">
             <!-- <li>Plataforma <b>asana</b></li> -->
-            <li>Visión general</li>
-            <li>Flujo de trabajo</li>
-            <li>Seguimiento del estado de O.P.</li>
-            <li>Sistema de Gestión de Datos en Producción</li>
+            <li><a href="AGLEZCAdoc.html#vision_general">Visión general</a></li>
+            <li>
+              <a href="AGLEZCAdoc.html#flujo_trabajo">Flujo de trabajo</a>
+            </li>
+            <li>
+              <a href="AGLEZCAdoc.html#seguimiento"
+                >Seguimiento del estado de Ordenes de Producción (O.P.)</a
+              >
+            </li>
+            <li>
+              <a href="AGLEZCAdoc.html#sgdp"
+                >Sistema de Gestión de Datos en Producción (SGDP)</a
+              >
+            </li>
             <!-- <li>Espesificaciones de archivo</li> -->
-            <li>Procesos</li>
-            <li>Trazabilidad de material</li>
-            <li>Mantenimiento</li>
+            <li><a href="AGLEZCAdoc.html#procesos">Procesos</a></li>
+            <li>
+              <a href="AGLEZCAdoc.html#trazabilidad"
+                >Trazabilidad de material</a
+              >
+            </li>
+            <li><a href="AGLEZCAdoc.html#mantt">Mantenimiento</a></li>
             <!-- <li>Indicadores</li> -->
             <!-- <li>Procesos de reimpresión, registro de merma y exedente</li> -->
             <!-- <li>Fuentes y referencias</li> -->
@@ -122,36 +150,37 @@
       <main class="content_main">
         <div class="cabecera"></div>
         <div>
-          <h2 class="subtitle">Visión general</h2>
+          <h2 class="subtitle" id="vision_general">Visión general</h2>
           <p>
             <b>Impresos Aglezca S.A. de C.V.</b> es una empresa
             <b>100 % mexicana</b>, empresa que adapta la constante evolución de
             los mercados nacionales e internacionales en función de los
-            requerimientos de cada proyecto en el que el
-            <b>equipo de trabajo</b> de Impresos Aglezca se disponga a realizar,
-            contando con un flujo de trabajo dinámico y eficiente en cada uno de
-            los procesos que el cliente requiera para cubrir sus necesidades y
-            las de su producto satisfacoriamente. Clientes de los cuales se ha
-            tomado tiempo para conocerlos y cubrir cada aspecto requerido en su
-            producto y servicio, en colaboración de un equipo de expertos y
-            profesionales que cuentan con las habilidades y aptitudes con las
-            que, abordando diversos objetivos, aportan soluciones creativas,
-            desarrollan tendencia y crean una curva de desarrollo de producto
-            dinámica y adecuada a los alcances de cada proyecto. <br />
+            requerimientos de cada proyecto en el que el equipo de trabajo de
+            Impresos Aglezca se disponga a realizar, contando con un flujo de
+            trabajo dinámico y eficiente en cada uno de los procesos que el
+            cliente requiera para cubrir sus necesidades y las de su producto
+            satisfactoriamente. Clientes de los cuales se ha tomado tiempo para
+            conocerlos y cubrir cada aspecto requerido en su producto y
+            servicio, en colaboración de un equipo de expertos y profesionales
+            que cuentan con las habilidades y aptitudes con las que, abordando
+            diversos objetivos, aportan soluciones creativas, desarrollan
+            tendencia y crean una curva de desarrollo de producto dinámica y
+            adecuada a los alcances de cada proyecto. <br /><br />
           </p>
           <br /><br />
           <h2 class="subtitle">Objetivo</h2>
           <p>
             La presente documentación recopila el conocimiento técnico de los
-            usuario en el área para su implementación como manual en el
-            desarrollo de las actividades relacionadas con impresión digital,
-            buenas prácticas, procesos, estandares y la inclusión del personal a
-            temas de gestión de proyectos y normatividad, aportando al
-            aprendizaje de los procedimientos y habilidades con los que el
+            usuarios para su implementación como <b>manual de usuario</b> en el
+            desarrollo de las actividades relacionadas a impresión digital,
+            buenas prácticas, procesos, estándares y la inclusión del personal a
+            temas de gestión de proyectos en
+            <b>Impresos Aglezca S.A. de C.V.</b>, creando un punto de referencia
+            en el aprendizaje de procedimientos y habilidades con los que el
             usuario será capaz de solventar los requerimientos para el
-            desarrollo de productos con lineamientos específicos, gestionando el
-            personal disponible y la distribución de las tareas a realizar para
-            la realización efectiva del proceso.
+            desarrollo de productos con lineamientos específicos, la gestión
+            eficiente del personal disponible y la distribución de sus tareas a
+            realizar para el alcance efectivo de los objetivos.
             <br />
             <br />
             <a
@@ -168,19 +197,19 @@
         <div class="cabecera"></div>
         <div class="cabecera"></div>
         <div class="manual_content">
-          <h2>Flujo de trabajo</h2>
+          <h2 id="flujo_trabajo">Flujo de trabajo</h2>
 
           <p>
-            <b>Impresos Aglezca S.A. de C.V.</b> es una empresa con procesos diversos,
-            enfoque a resultados y satisfacción total en el cumplimiento de los
-            requerimientos de un producto, con un <b>flujo de trabajo</b> en
-            constante transformación de sus procesos, resultado de las
-            características que el cliente requiere en su recorrido como
-            comprador para la creación de su producto. Este set de habilidades
-            con las que cuenta el equipo de trabajo requiere de una metodología
-            dinámica e iterativa, es decir, que los procesos avancen en la
-            creación de un producto realizando entregas cíclicas llamadas
-            <b>sprints</b> las cuales alcanzarán los objetivos en la
+            <b>Impresos Aglezca S.A. de C.V.</b> es una empresa con procesos
+            diversos, enfoque a resultados y satisfacción total en el
+            cumplimiento de los requerimientos de un producto, con un
+            <b>flujo de trabajo</b> en constante transformación de sus procesos,
+            resultado de las características que el cliente requiere en su
+            recorrido como comprador para la creación de su producto. Este set
+            de habilidades con las que cuenta el equipo de trabajo requiere de
+            una metodología dinámica e iterativa, es decir, que los procesos
+            avancen en la creación de un producto realizando entregas cíclicas
+            llamadas <b>avances</b> las cuales alcanzarán los objetivos en la
             construcción de un producto en función de sus requerimientos y la
             dimensión de tiempo disponible.
           </p>
@@ -193,13 +222,53 @@
               href="https://imgur.com/OhhHZmQ"
             />
           </figure>
+          <p>
+            La estructura base de un flujo de trabajo es una tarea clave en todo
+            proyecto por ejecutar, para alcanzar los objetivos en función de
+            los requerimientos y necesidades del usuario, minimizando en
+            medida de lo posible la inversión de recursos en reprocesos y
+            replanteamientos del proyecto que pueden afectar tanto su tiempo de
+            entrega como su calidad y alcance de objetivos, la creación y
+            planificación de etapas de elaboración de un producto dentro de un
+            flujo de trabajo organizado aseguraran el alcance de los objetivos
+            planteados para la realización de proyectos. <br /><br />
+            Las siguientes guías ayudarán a la compresión de la construcción de un  flujo de
+            trabajo y su implementación en los recursos que proporciona la
+            plataforma de ASANA para la gestión de tareas en <b>Impresos Aglezca S.A. de C.V.</b>
+            <br /><br />
+            <a
+              href="https://asana.com/es/guide/examples/workflow-basics/what-is-a-workflow#gl-what"
+              target="”_blank”"
+              >¿Qué es un flujo de trabajo?
+            </a>
+            <br /><br />
+            <a
+              href="https://asana.com/es/guide/examples/workflow-basics/building-the-foundation-of-your-workflow"
+              target="”_blank”"
+              >Cómo crear las bases de tu flujo de trabajo en ASANA
+            </a>
+            <br /><br />
 
+            El siguiente esquema representa el
+            <b> Diagrama de Flujo de Trabajo</b> dentro del
+            <b>Área de Impresión Digital:</b> <br /><br />
+            <figure>
+              <br /><br /><br /><br />
+              <img
+                style="margin-left: 5vw; width: 55vw"
+                src="https://i.imgur.com/qo1IFTB.png"
+                alt="diagrama de flujo de trabajo"
+                href="https://imgur.com/qo1IFTB"
+              />
+            </figure>
+          </p>
           <!-- - Sistematiza la recepción del trabajo - Automatiza las tareas -
           Integra herramientas - Mejora los procesos - Crea flujos de trabajo
           efectivos. -->
-
           <div class="cabecera"></div>
-          <h2>Seguimiento del estado de O.P.</h2>
+          <h2 id="seguimiento">
+            Seguimiento del estado de <b>Órdenes de Producción (O.P.)</b>
+          </h2>
           <p>
             <!-- Una vez <b>revisada</b> la documentación y guías de asana notarás
             que es una potente herramienta de gestión, de gran utilidad para el
@@ -208,49 +277,89 @@
             <br /> -->
             <br />
             En <b>Impresos Aglezca S.A. de C.V.</b> el seguimiento de los
-            proyectos en desarrollo, referentes al área de
-            <b>impresión digital</b>, se hará uso de plantillas
-            <b>estilo tablero </b> para visualizar en forma de columnas los
-            diferentes hitos por los que pasa el producto en desarrollo dentro
-            del área a la par que se documenta dentro de plataforma los
-            **sprints** importantes para la trazabilidad del proceso, tomando
-            como referencia el esquema de <b>flujo de trabajo</b>.
+            proyectos en desarrollo, referentes al área de impresión digital, se
+            hará uso de plantillas estilo tablero para visualizar en forma de
+            columnas los diferentes hitos por los que pasa el producto en
+            desarrollo dentro del área a la par que se documenta dentro de
+            plataforma los <b>avances</b>* importantes para la trazabilidad del
+            proceso, tomando como referencia el esquema de flujo de trabajo.
           </p>
+          <br /><br />
+          <h3>- ASANA -</h3>
 
           <p>
             La plataforma <b>ASANA</b> es una herramienta de gestión y
             organización
             <!-- en forma lineal y ciclica -->
-            de proyectos colaborativos y multidisciplinarios con diferentes
-            plantillas para su visualización y organización, que provee al
-            usuario la facilidad de diversificar sus tareas y actividades que
-            los procesos gestionados requieran dividirse en diversas fases
-            dinámicas, esto permite la realización de cambios durante los
-            procesos con la finalidad de aportar valor al producto y procesos en
-            cualquier etapa de desarrollo, reducir riesgos, gestionar la
-            eficiencia y afrontar los problemas de una manera flexible y
-            dinámica.
+            de proyectos colaborativos y multidisciplinarios que cuenta con
+            diversas plantillas para la visualización y organización de tareas
+            aportando al usuario la facilidad de diversificar sus actividades
+            para el alcance de sus objetivos, objetivos que requiere dividir y
+            visualizar en etapas dinámicas para su gestión, esto permite la
+            realización de cambios dinámicos durante los procesos con la
+            finalidad de aportar valor al producto en cualquier etapa de
+            desarrollo, reducir riesgos, gestionar la eficiencia y afrontar las
+            <b>No conformidades</b> de una manera flexible y dinámica.
 
             <br />
             <br />
-            La plataforma de asana es de uso libre y otorga una gran variedad de
+            La plataforma de ASANA es de uso libre y otorga una gran variedad de
             plantillas para la gestión colaborativa de los proyectos entre
             equipos multidisciplinarios. Su interfase es muy intuitiva y su
             documentación muy completa, la cual utilizaremos para la inducción a
             la herramienta de gestión.
             <br /><br />
-            En los siguientes links se encontrará una guía de registro para
-            crear una cuenta y la guía de uso de la plataforma: <br /><br />
+            Las siguientes guías ayudarán al registro y
+            <b>creación de una cuenta</b> y la <b>guía de uso</b> para la
+            implementación de la plataforma para hacer un mejor uso de sus
+            recursos: <br /><br /><br /><br />
             <a
               href="https://asana.com/es/guide/help/fundamentals/about-asana"
               target="”_blank”"
               >Configura tu cuenta de Asana | Guía</a
-            ><br />
+            ><br /><br />
             <a
               href="https://asana.com/es/guide/get-started/begin/quick-start"
               target="”_blank”"
-              >Guía de uso de Asana | Guía</a><br />
+              >Guía de uso de Asana | Guía</a
+            ><br /><br />
+          </p>
+          <br /><br /><br /><br /><br /><br />
+          <h2>Procedimiento para el seguimiento del estado de una O.P. (PROC-1)</h2><br />
+          <p>
+            Para el seguimiento y actualización de estado de cada O.P. se hará
+            uso de la plataforma antes mencionada con el siguiente
+            procedimiento:
+            <br /><br />
+            <div class="list-content">
+              <ol>
+              
+                <li href="https://imgur.com/oiKjqFR">Ingreso de Orden de Producción <br><br> <img src="https://i.imgur.com/oiKjqFR.png" alt=""></li><br>
+                
+                <li>Firma de recibido de O.P. con fecha y hora en el apartado indicado.<a href="https://imgur.com/GGCuVp3"> <br><br> <img src="https://i.imgur.com/GGCuVp3.png" title="source: imgur.com" /></a></li><br>
+                <li>Registro de Orden de Producción en ASANA, en la columna de <b style="color: blue;">INGRESO DE O.P.</b>, <br>agregando imagen referencial  y especificaciones incluidas en las espesificaciones.<br><br><a href="https://imgur.com/Bx2edeF"><img src="https://i.imgur.com/Bx2edeF.png" title="source: imgur.com" /></a></li><br>
+                
+                
+                <li>Los registros se desplazaran entre las columnas según su estado: 
+                  <ul>
+                    <li>RETRASOS</li>
+                    <li>DISEÑO / ESPECIFICACIÓN EN CURSO</li>
+                    <li>EN PROCESO</li>
+                    <li>PRIORIDADES / URGENCIAS</li>
+                    <li>ACABADO</li>
+                    <li>COMPLETADOS</li>
+                  </ul>
+                </li><br>
+                <li>Si el archivo indicado en la O.P. requiere de formación para impresión y/o se encuentra a espera de alguna especificación, se desplazará a la columna de **Diseño / especificación en curso** documentando fecha y hora.</li><br>
+                <li>Si la O.P. se encuentra fuera de los tiempos de entrega indicados, se desplazara a la columna de retrasos, documentando fecha y hora.</li><br>
+                <li>Si el estado de la orden de producción pasa a URGENTE se desplazara a la comuna de Prioridades/Urgencias, documentando fecha y hora.</li><br>
+                <li>Una vez entregado el material identificado a proceso de acabado, se colocará en la columna Acabado, documentando fecha y hora.</li><br>
+                <li>Una vez entregada a Logística para su disposición al cliente, el elemento se desplazará a la columna Completados.</li><br>
+              </ol>
+
+            </div>
             
+
           </p>
           
 
@@ -334,18 +443,28 @@
           <br />
           <br />
           <br />
-          <h2>Sistema de Gestión de Datos en Producción</h2>
+          <h2 id="sgdp">Sistema de Gestión de Datos en Producción (SGDP)</h2>
 
           <p>
             El <b>Sistema de Gestión de Datos en Producción</b> (<b>SGDP</b>),
-            se desarrolla como metodo de recopilación, almacenamiento y
-            consulta de datos para el desarrollo de indicadores clave
-            (<b>KPI´s</b>) y el alcance de objetivos y resultados (<b>OKR´s</b>)
-            en funsion <!-- (<b>fx</b>) --> de la integración de la información en la toma de
-            desiciones en un entorno de producción real.
+            se desarrolla como método de recopilación, almacenamiento y consulta
+            de datos en el registro de los procesos realizados en el área, para
+            el desarrollo de indicadores clave (<b>KPI´s</b>) y el alcance de
+            objetivos (<b>OKR´s</b>) en función de la integración de
+            la información en la toma de decisiones en un entorno de producción.
 
             <br />
             <br />
+
+            <h2>Procedimiento para el uso del Sistema de Gestión de Daros en Producción (PROC-2)</h2><br />
+          <p>
+            Para el uso del SGDP se hará
+            uso de formularios con el siguiente
+            procedimiento de registro:
+            <br /><br />
+            <ol>
+              <li>ON</li>
+            </ol>
           </p>
         </div>
 
