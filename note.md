@@ -81,7 +81,7 @@ Index: Aglezca manual
 - Registro y documentación
 - Indicadores de procesos
 
-- Actividades de arranque de semna
+- Actividades de arranque de la semana
 - Mantenimiento preventivo / lubricación / Retiro de residuo de tinta
 - Limpieza general  ( l plotimp, 4plotcut, 1cama plana, 1 laminadora)
 - Mantenimiento de uso.
@@ -113,34 +113,61 @@ ___
 
 ## UI kit:: 
 
-- Aglezca logos
+- Aglezca logo-manual :img
 
-1. Visión general / overview
+1. Visión general / #overview
+    - Objetivo de documento
+
+2. Flujo de trabajo / #workflow
+    - Diagrama de flujo de trabajo
+    - Mapeo de procesos
+    * img: flujo de trabajo simplificado
+    * img: flujo de trabajo completo
+
+3. Seguimiento de Ordenes de Producción (O.P.)
+    - **proc1**: procedimiento del seguimiento de O.P. en plataforma **asana**
+    - img: pantallas de ingreso y desarrollo del seguimiento
+
+4. Registro de procesos productivos
+    - **SGDP** (sistema de gestión de datos en producción)
+    - **proc2**: procedimiento de registro en SGDP
+    - Formularios 
+    - buenas practicas de docuemntación
+    * img: pantallas de uso de formularios
+
+5. **EPP** (equipo d eprotección personal)
+    - **proc3**: procedimiento de registro de uso de epp.
     
 
+6. Registro de solicitudes a **Almacén**
+    - **proc4**: procedimiento de registro de solicitud de matyeriales e insumos  **Almacén**.
+    - Trazabilidad de material impreso y en área.
 
-2. Flujo de trabajo / workflow
-    - img: flujo de trabajo simplificado
+7. Espesificaciones de archivos tipo **salida** para impresión.
+    - creación de intructivo.
 
+8. Procesos de operación de equipos.
+    - **proc5**: procedimiento de operación en equipos de impresión, corte/suaje y laminado.
+    * img: vectores de ejemplificación de operación en equipos, procesos a realizar, instrumentos y herramientas utilizadas. (linea/ estilo de diseño)
 
-3. seguimiento de O.P. / Asana
+7. Trazabilidad de material.
+    - **proc6**: procedimiento de registro de consumo de material procesado.
+    * img: imagenes de etiquetas de trazabilidad de material impreso.
+    - registrro y disposición de sobre producción y merma en los procesos.
+    - **proc7**: procedimiento de registrro y disposición de sobre producción y merma en los procesos.
 
-    - img: pantallas de ingreso y desarrollo de O.P.
+8. Mantenimiento (MANTT)
+    - **proc7**: procedimiento de registro de rezlización de mantenimientos.
+    - Mantt. de uso.
+    - Mantt. preventivo.
+    - Mantt correctivo.
+    * img: vectores de ejemplificación de matenimientos en equipos
 
-4. Formularios / buenas practicas de docuemntación
-    - img: pantallas de uso de formularios
+9. Indicadores
 
-5. <b>** ¿? **</b>  formaciones
-    - img: pantallas de espesificaciones de formación
+10. Workflows, metodologias, NOM y estandares internacionales.
 
-6. procesos de impresión / CORTE / SAUJE / LAMIANDO
-    - img: vectores de ejemplificación de equipos, procesos, instrumentos y herramientas. (linea/ estilo de diseño)
-
-7. trazabilidad e material procesado
-    - img: imagenes de etiquetas de trazabilidad de material impreso
-
-8. mantenimientos
-    - img: vectores de ejemplificación de matenimientos en equipos
+11. Footer
 
 
 
@@ -161,10 +188,16 @@ MANTT
 - realizo 	
 - observaciones
 
+
+
+
 INVESTIGACIÓN
 
 -- COMO SE ESTRUCTURA UN DOCUMENTO TÉCNICO MANUAL.
 -- como insertar una nota en un documento técnico.
+
+
+
 
 
 
@@ -191,3 +224,31 @@ INVESTIGACIÓN
 # Sistema de Gestión de Datos en Producción
 
 - 
+
+
+
+
+
+# Documentación de procesos :page_facing_up:
+
+Index
+
+- Visión general 
+- Flujo de trabajo
+    - Diagrama de flujo
+    - Mapeo de procesos
+    * Cadena de valor
+* Orden de producción
+    - Seguimiento de Ordenes de Producción  en proceso
+    - asana
+- EPP
+    - Registro de uso de EPP
+    - Mantt. y reemplazo de EPP
+- Espesificación de archivos para producción.
+- Solicitudes de material a Almacen
+- Trazabilidad de material
+- Merma y exedente
+    - registro
+- Mantenimiento
+- Operación de equipos.
+-  registro de operación en equipos
