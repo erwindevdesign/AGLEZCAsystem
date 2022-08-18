@@ -1,0 +1,1474 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manual-Template</title>
+  <style>
+    html {
+      font-size: 62.5%;
+      scroll-behavior: smooth;
+      font-family: "Segoe UI", "Helvetica Neue", "Roboto", sans-serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* ============ paleta de color ============ */
+    /* 
+            color1: RGB #323E40 == HSC 186,22,25 == HSL 186,12,22
+            color2: RGB #F2A922 == HSV  39,86,95 == HSL  39,89,54
+            color3: RGB #D98014 == HSV  33,91,85 == HSL  33,83,46
+            color4: RGB #732002 == HSV  16,98,45 == HSL  16,96,23
+            color5: RGB #D9501E == HSV  16,86,85 == HSL  16,75,48
+        */
+
+    /* ============ text sixe ============ */
+    /* 
+            h1 == 24px
+            h2 == 20px
+            h3 == 16px
+            p  == 14px
+            nav = 13px 
+        */
+
+    :root {
+      /* ============ paleta de color ============ */
+      /* color1 */
+      --gray-color: hsl(186, 12%, 22%);
+      /* color2 */
+      --ocre-color: hsl(39, 89%, 54%);
+      /* color3 */
+      --brown-color: hsl(33, 83%, 46%);
+      /* color4 */
+      --merlotred-color: hsl(16, 96%, 23%);
+      /* color5 */
+      --orangered-color: hsl(16, 75%, 48%);
+
+      /* ============ color ============ */
+
+      --gray-sub-color: #a5a4a3;
+      --cian-link: #14aaf5;
+      --black: #151b26;
+      --error-color: #ff5263;
+      --emphasis-color: #7bb750;
+
+      /* ============ text sixe ============ */
+      --h1-font-size: 2.4rem;
+      --h2-font-size: 2rem;
+      --h3-font-size: 1.6rem;
+      --p-font-size: 1.4rem;
+      --smaller-font-size: 1.3rem;
+    }
+
+    .primary-content {
+      width: 100vw;
+
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+    }
+
+    .navbar-img-content {
+      width: 1fr;
+      height: 6rem;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      display: flex;
+    }
+
+    .navbar-img {
+      margin: 0.8rem auto;
+
+    }
+
+    .navbar-index-content {
+      width: 100%;
+      position: sticky;
+      top: 8rem;
+
+
+    }
+
+
+
+    .navbar-index-list {
+      width: 100%;
+      margin: 1.5rem;
+      font-size: var(--smaller-font-size);
+      color: var(--gray-sub-color);
+
+    }
+
+
+    .navbar-index-list li {
+      list-style: none;
+    }
+
+    .navbar-index-list li a {
+      display: flex;
+      text-decoration: none;
+      color: var(--gray-sub-color);
+      border-radius: 2rem;
+      list-style: none;
+      margin-top: 1rem;
+      padding: 0.9rem;
+      width: 80%;
+
+    }
+
+    .navbar-index-list li a:hover {
+      cursor: pointer;
+      text-decoration: underline;
+      background-color: #f6f8f9;
+      color: var(--emphasis-color);
+
+    }
+
+    main {
+      padding: 1rem;
+    }
+
+    main section h1 {
+      font-size: var(--h1-font-size);
+      max-width: 52%;
+    }
+
+    main section h2 {
+      font-size: var(--h2-font-size);
+      max-width: 52%;
+    }
+
+    main section h3 {
+      font-size: var(--h3-font-size);
+      max-width: 52%;
+    }
+
+    main section p {
+      font-size: var(--p-font-size);
+      max-width: 52%;
+    }
+
+
+    .prime-text h2 {
+      font-size: var(--h2-font-size);
+      max-width: 52%;
+    }
+
+    .prime-text h3 {
+      font-size: var(--h3-font-size);
+      max-width: 52%;
+    }
+
+    .prime-text p {
+      font-size: var(--p-font-size);
+      max-width: 52%;
+    }
+
+    .second-column-bold-title,
+    .second-column-normal-bold,
+    .second-column-bold-normal,
+    .second-column-img {
+      margin: 0;
+      width: 40%;
+      float: right;
+      clear: right;
+    }
+
+    .double-column-text-normal-bold h2 {
+      font-size: var(--h2-font-size);
+      font-weight: normal;
+
+    }
+
+    .second-column-bold-normal h3 {
+      font-size: var(--h3-font-size);
+      font-weight: normal;
+    }
+
+    .img-content {
+      padding: 1rem;
+      background-color: var(--gray-sub-color);
+      max-width: 80%;
+      max-height: 100%;
+    }
+
+    .img-lateral {
+      display: flex;
+      margin: 0 auto;
+      width: 45%;
+
+    }
+
+    .imgur-embed-pub {
+      width: 50%;
+    }
+
+    .video-container {
+      width: 10vw;
+    }
+
+    section ul li,
+    section ol li {
+      font-size: var(--p-font-size);
+      margin-left: 5rem;
+    }
+
+    section table {
+      font-size: var(--p-font-size);
+      margin-left: 5rem;
+
+    }
+
+    .content-table {
+      border-collapse: collapse;
+      margin: 2.5rem 0;
+      font-size: var(--smaller-font-size);
+      min-width: 40rem;
+      border-radius: 0.5rem 0.5rem 0 0;
+      overflow: hidden;
+      box-shadow: 0 0 2rem rgba(0, 0, 0, 0.15);
+    }
+
+    .content-table caption {
+      font-size: var(--h2-font-size);
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    .content-table2 {
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+      font-size: var(--smaller-font-size);
+      width: 30rem;
+      border-radius: 0.5rem 0.5rem 0 0;
+      overflow: hidden;
+      box-shadow: 0 0 2rem rgba(0, 0, 0, 0.15);
+      margin-right: 20rem;
+    }
+
+    .content-table thead tr,
+    .content-table2 thead tr {
+      background-color: var(--emphasis-color);
+      color: white;
+      text-align: left;
+      font-weight: bold;
+    }
+
+    .content-table th,
+    .content-table td,
+    .content-table2 th,
+    .content-table2 td {
+      padding: 1.2rem 1.5rem;
+    }
+
+    .content-table tbody tr,
+    .content-table2 tbody tr {
+      border-bottom: .1rem solid var(--gray-sub-color);
+
+    }
+
+    .content-table tbody tr:nth-last-of-type(even),
+    .content-table2 tbody tr:nth-last-of-type(even) {
+      background-color: #f2f2f2;
+    }
+
+    .content-table tbody tr:last-of-type,
+    .content-table2 tbody tr:last-of-type {
+      border-bottom: 0.2rem solid var(--emphasis-color);
+    }
+
+    .content-table tbody tr.active-row,
+    .content-table2 tbody tr.active-row {
+      font-weight: bold;
+      color: var(--emphasis-color);
+    }
+
+    .cabecera {
+      height: 150px;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: Arial, sans-serif;
+    }
+
+    .workflow-tiny-img {
+      display: flex;
+    }
+
+    .workflow-img {
+      max-width: 80%;
+      margin-left: -10%;
+      position: relative;
+    }
+
+    .link {
+      font-size: var(--smaller-font-size);
+      text-decoration: none;
+      color: var(--emphasis-color);
+      font-weight: 600;
+    }
+
+    .link:hover {
+      text-decoration: underline;
+    }
+
+    #sub-title {
+      margin-left: 2.5rem;
+    }
+
+    p {
+      text-align: justify;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="primary-content">
+    <div class="navbar">
+      <figure class="navbar-img-content">
+        <img class="navbar-img" src="assets/img/aglezca-logo-manual.svg" alt="Your logo" />
+      </figure>
+      <div class="navbar-index-content">
+        <nav class="navbar-index">
+          <ul class="navbar-index-list">
+            <li id="navabar-index-list-one"><a href="index0.html#overview">Visión General</a></li>
+            <li id="navabar-index-list-two"><a href="index0.html#workflow">Flujo de trabajo</a></li>
+            <li id="sub-title"><a href="index0.html#workflow-diagram">Diagrama de flujo de trabajo</a></li>
+            <li id="sub-title"><a href="index0.html#process-map">Mapeo de procesos</a></li>
+            <li id="sub-title"><a href="index0.html#cadena-valor">Cadena de valor</a></li>
+            <li><a href="index0.html#op">Orden de producción</a></li>
+            <li id="sub-title"><a href="index0.html#production-order">Seguimiento de Ordenes de
+                Producción en proceso</a></li>
+            <li id="sub-title"><a href="index0.html#asana"><img style="height: 1.4rem; margin-right: 0.5rem;"
+                  src="assets/img/logo-icon-asana.svg" alt=""> asana </a></li>
+            <li id="navabar-index-list-four"><a href="index0.html#epp">Equipo de protección personal (EPP)</a></li>
+            <li id="navabar-index-list-five">item-5</li>
+            <li id="navabar-index-list-six">item-6</li>
+            <li id="navabar-index-list-seven">item-7</li>
+            <li id="navabar-index-list-eight">item-8</li>
+            <li id="navabar-index-list-nine">item-9</li>
+            <li id="navabar-index-list-ten">item-10</li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <main>
+      <div class="cabecera"></div>
+      <section class="overview">
+        <!-- Usaremos el div "cabecera" como espaciador estandar de 50px y sus multiplos -->
+        <h2 id="overview">Visión General</h2>
+        <br />
+        <p>
+          <b>Impresos Aglezca S.A. de C.V.</b> es una empresa
+          <b>100 % mexicana</b>, empresa que adapta la constante evolución de
+          los mercados nacionales e internacionales en función de los
+          requerimientos de cada proyecto en el que el equipo de trabajo de
+          Impresos Aglezca se disponga a realizar, contando con un flujo de
+          trabajo dinámico y eficiente en cada uno de los procesos que el
+          cliente requiera para cubrir sus necesidades y las de su producto
+          satisfactoriamente. Cubrir cada aspecto requerido del producto y
+          servicio, en colaboración de un equipo de expertos y profesionales
+          que cuentan con las habilidades y aptitudes con las que, abordando
+          diversos objetivos, aportan soluciones creativas, desarrollan
+          tendencia y crean una curva de desarrollo de producto dinámica y
+          adecuada a los alcances de cada objetivo es indispensable en nuestros procesos. <br /><br />
+        </p>
+        <br />
+        <h2>Objetivo</h2>
+        <br />
+        <p>
+          La presente documentación recopila el conocimiento técnico de los
+          usuarios para su implementación como <b>manual de usuario</b> en el
+          desarrollo de las actividades relacionadas al área,
+          buenas prácticas, procesos, estándares y
+          temas de gestión de proyectos, creando un punto de referencia
+          en el aprendizaje de procedimientos y habilidades con los que el
+          usuario será capaz de solventar los requerimientos para el
+          desarrollo de productos con lineamientos específicos, la gestión
+          eficiente del personal disponible y la distribución de sus tareas a
+          realizar para el alcance efectivo de los objetivos.
+          <br />
+          <br />
+          <a class="link" href="https://asana.com/es/resources/process-documentation" target="”_blank”">Documentación de
+            procesos</a>
+          <br />
+        </p>
+        <br />
+      </section>
+      <div class="cabecera"></div>
+
+
+      <section id="workflow" class="workflow">
+        <br><br>
+        <!-- Usaremos el div "cabecera" como espaciador estandar de 50px y sus multiplos -->
+        <h2>Flujo de trabajo</h2>
+        <br />
+        <p>
+          <b>Impresos Aglezca S.A. de C.V.</b> es una empresa con procesos
+          diversos, enfoque a resultados y satisfacción total en el
+          cumplimiento de los requerimientos de un producto, con un
+          <b>flujo de trabajo</b> en constante transformación de sus procesos,
+          resultado de las características que el cliente requiere en su
+          recorrido como comprador para la creación de su producto. Este set
+          de habilidades con las que cuenta el equipo de trabajo requiere de
+          una metodología dinámica e iterativa, es decir, que los procesos
+          progresen en la creación de un producto realizando entregas cíclicas
+          llamadas <b>avances</b> las cuales alcanzarán los objetivos en la
+          construcción de un producto en función de sus requerimientos y las capasidades del equipo de trabajo.
+        </p>
+
+        <figure class="workflow-tiny-img">
+          <img class="workflow-img" src="assets/img/workflow-B.svg" alt="">
+        </figure>
+        <h3>
+          Actividades dentro del área
+        </h3><br>
+        <p>Las actividades dentro del área de <b>impresión digital</b> se engloban en el siguiente listado: </p>
+        <table class="content-table">
+          <caption>Actividades operativas en el área</caption>
+
+          <tbody>
+            <tr>
+              <td> </td>
+              <td>INICIO</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Limpieza y revisión del estado del EPP</td>
+
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Limpieza de equipos y áreas operativas (5's)</td>
+
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Mantenimiento inicial de uso (limpieza de cabezal y estación de carro)</td>
+
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Registro de actividades de mantenimiento, revisión de componentes y consumibles</td>
+
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Revisión de programa de producción, prioridades y urgencias</td>
+
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Distribución de actividades</td>
+
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>Revisión de especificaciones de producción, archivos formación/color/texto y alcance</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>Revisión de existencias en Almacén, tinta/componentes/material a procesar</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>Preparación de equipo RIP/montaje de material / calibración</td>
+            </tr>
+            <tr class="active-row">
+              <td>10</td>
+              <td>INICIO de operación en equipos</td>
+            </tr>
+            <tr>
+              <td>11</td>
+              <td>Revisión continua de calidad en el proceso (dimensiones, muestra de color, lectura exploratoria)</td>
+            </tr>
+            <tr>
+              <td>12</td>
+              <td>Registro de actividades de operación de equipos</td>
+            </tr>
+            <tr>
+              <td>13</td>
+              <td>Identificación de material procesado y material restante</td>
+            </tr>
+            <tr>
+              <td>14</td>
+              <td>Disposición al siguiente proceso con el Líder de Área</td>
+            </tr>
+            <tr>
+              <td>15</td>
+              <td>Mantenimiento de uso final (limpieza de cabezal y estación de carro)</td>
+            </tr>
+            <tr>
+              <td>16</td>
+              <td>Registro de actividades de mantenimiento de cierre</td>
+            </tr>
+            <tr class="active-row">
+              <td>17</td>
+              <td>TERMINO de operación en equipos</td>
+            </tr>
+            <tr>
+              <td>18</td>
+              <td>Limpieza de equipos y áreas operativas (5's)</td>
+            </tr>
+            <tr>
+              <td> </td>
+              <td>TERMINO</td>
+            </tr>
+          </tbody>
+
+        </table>
+
+
+        <div class="cabecera"></div>
+        <h3 id="workflow-diagram">Diagrama de flujo de trabajo</h3><br><br>
+        <p>
+          La estructura base de un flujo de trabajo es una tarea clave para alcanzar los objetivos en función de
+          los requerimientos y necesidades del usuario, ampliando la gestión de recursos en los procesos requeridos, la
+          creación y
+          planificación de etapas de elaboración de un producto dentro de un
+          flujo de trabajo organizado aseguraran el alcance de los objetivos
+          propuestos para la realización de un producto. <br /><br />
+          Las siguientes guías ayudarán a la compresión de la construcción de un flujo de
+          trabajo y su implementación en los recursos que proporciona la
+          plataforma de ASANA para la gestión de tareas en el área.
+          <br /><br />
+          <a class="link" href="https://asana.com/es/guide/examples/workflow-basics/what-is-a-workflow#gl-what"
+            target="”_blank”">¿Qué es un flujo de trabajo?
+          </a>
+          <br /><br />
+          <a class="link"
+            href="https://asana.com/es/guide/examples/workflow-basics/building-the-foundation-of-your-workflow"
+            target="”_blank”">Cómo crear las bases de tu flujo de trabajo
+          </a>
+        <figure>
+          <br /><br /><br /><br />
+          <img style="margin-left: -1.5vw; width: 70vw;" src="assets/img/workflow-A.svg"
+            alt="diagrama de flujo de trabajo completo" href="https://imgur.com/Qsk0Rer" />
+
+        </figure>
+        <div class="cabecera"></div>
+        <h2 id="process-map">Mapeo de procesos</h2><br>
+        <p>
+          El mapa de procesos es una herramienta de gestión que se utiliza para representar visualmente el flujo de
+          trabajo y los pasos que intervienen en un proceso. Esta herramienta se utiliza
+          para comprender mejor un proceso y mejorar su eficacia. Al crear diagramas fáciles de seguir, las partes
+          interesadas pueden identificar aspectos de un proceso que pueden mejorar. Esto incluye la identificación de
+          cuellos de botella en los flujos de trabajo y otras ineficiencias como las tareas repetitivas que son ideales
+          para automatización.
+        </p><br>
+        <h3>Mapa de procesos en el área</h3>
+        <figure>
+          <img style="margin-left: -1.5vw; width: 70vw" src="assets/img/process-map.svg" alt="">
+        </figure>
+
+        <div class="cabecera"></div>
+        <h2 id="cadena-valor">Cadena de valor</h2>
+        <p>
+          La cadena de valor es un modelo que permite describir el impacto de las actividades y diferentes áreas de una
+          organización generando valor al producto final en funsión de un enfoque general en su cadena productiva.
+        </p><br><br>
+        <h3>Cadena de valor de procesos</h3>
+        <figure>
+          <img style="margin-left: -1.5vw; width: 35vw" src="assets/img/cadena.svg" alt=""> <!-- AQUI FALTA UNA IMAGEN -->
+        </figure>
+
+      </section>
+      <div class="cabecera"></div>
+      <section class="OP">
+        <div id="op">
+          <h2>Orden de producción (O.P.)</h2><br>
+
+
+          <p>
+            Las órdenes de producción se usan para gestionar los procesos de conversión de materiales adquiridos en
+            productos. Las órdenes de producción dirigen el trabajo en las distintas áreas de trabajo de la planta.
+
+            Antes de empezar con la producción, se realiza una planificación de materiales y recursos,
+            para gestionar el alcance del objetivo que es la realización de los productos solicitados por los clientes
+            con los estandares de calidad y servicio para convertirse en distintivo del servicio realizado.
+
+            Las órdenes de producción son componentes esenciales de la funcionalidad de los procesos y contienen la
+            siguiente información:
+            <br><br>
+
+          <table class="content-table">
+            <caption>Partes de una orden de producción</caption>
+            <thead>
+              <th>No.</th>
+              <th>Sección</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Fecha de creación</td>
+
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>No. de Orden de Producción</td>
+
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>No. de Orden de Compra</td>
+
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>No. de Folio de Salida de Almacén</td>
+
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Cliente</td>
+
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Cantidad de Piezas</td>
+
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>Nombre del archivo o proyecto </td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>Fecha de entrega</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>Imagén de referencia</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>Espesificaciones</td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td>Entrega estimada de material de almacén</td>
+              </tr>
+              <tr>
+                <td>12</td>
+                <td>Descripción de paqueteria</td>
+              </tr>
+              <tr>
+                <td>13</td>
+                <td>Firmas de validación entre procesos</td>
+              </tr>
+              <tr>
+                <td>14</td>
+                <td>Observaciones durante el proceso</td>
+              </tr>
+              <tr>
+                <td>15</td>
+                <td>Errores detectados durante el proceso</td>
+              </tr>
+            </tbody>
+            <div style="margin-top: 8rem;" class="second-column-img">
+              <figure class="img-content">
+                <img style="width: 100%;" class="img-lateral" src="assets/img/num.png" alt="">
+              </figure>
+            </div>
+          </table>
+
+
+          </p>
+        </div>
+        <!-- Usaremos el div "cabecera" como espaciador estandar de 50px y sus multiplos -->
+        <div id="production-order" class="cabecera"></div>
+        <h2>Seguimiento de Ordenes de Producción en proceso</h2>
+        <br />
+        <p>
+          En <b>impresión digital</b> para el seguimiento de los
+          proyectos en desarrollo se
+          hará uso de plantillas estilo tablero para visualizar en forma de
+          columnas los diferentes hitos por los que itera el material para la realización de un producto en
+          desarrollo dentro del área, al mismo tiempo se documentará dentro de
+          plataforma los <b>avances</b> importantes para la trazabilidad del
+          proceso, tomando como referencia el esquema de flujo de trabajo y el mapeo de procesos para la realización de
+          actividades.
+        </p>
+        <br />
+        <h3 id="asana"><img style="height: 1.4rem;" src="assets/img/logo-icon-asana.svg" alt=""> asana </h3>
+        <br>
+        <p>
+          La plataforma <b><img style="height: 1.4rem;" src="assets/img/logo-icon-asana.svg" alt=""> asana</b> es una
+          herramienta de gestión y
+          organización de proyectos colaborativos y multidisciplinarios que cuenta con
+          diversas plantillas para la visualización y organización de tareas
+          aportando al usuario la facilidad de diversificar sus actividades
+          para el alcance de sus objetivos, objetivos que requiere dividir y
+          visualizar en etapas dinámicas para su gestión, esto permite la
+          realización de cambios dinámicos durante los procesos con la
+          finalidad de aportar valor al producto en cualquier etapa de
+          desarrollo, reducir riesgos, gestionar la eficiencia y afrontar las
+          <b>No conformidades</b> de una manera flexible y dinámica.
+
+
+          <br />
+          La plataforma de <b> <img style="height: 1.4rem;" src="assets/img/logo-icon-asana.svg" alt=""> asana</b> es de
+          uso libre y otorga una gran variedad de
+          plantillas para la gestión colaborativa de los proyectos entre
+          equipos multidisciplinarios. Su interfase es muy intuitiva y su
+          documentación muy completa, la cual utilizaremos para la inducción a
+          la herramienta de gestión.
+          <br /><br />
+        <p>Las siguientes guías ayudarán al registro y
+          <b>creación de una cuenta</b> y la <b>guía de uso</b> para la
+          implementación de la plataforma para hacer un mejor uso de sus
+          recursos: <br /><br />
+        </p>
+        <a class="link" href="https://asana.com/es/guide/help/fundamentals/about-asana" target="”_blank”">Configura tu
+          cuenta de
+          <b><img style="height: 1.4rem;" src="assets/img/logo-icon-asana.svg" alt=""> asana </b> | Guía</a><br /><br />
+        <a class="link" href="https://asana.com/es/guide/get-started/begin/quick-start" target="”_blank”">Guía de uso de
+          <b><img style="height: 1.4rem;" src="assets/img/logo-icon-asana.svg" alt=""> asana </b> |
+          Guía</a><br /><br />
+        </p>
+      </section>
+      <div class="cabecera"></div>
+      <section class="double-column-text-bold-title">
+        <h2>Procedimiento del seguimiento de ordenes de producción (O.P.)</h2>
+        <br />
+        <p>
+          El seguimiento <b>conjunto</b> de producción en el área y la actualización de su <b>estado</b> en cada orden
+          de trabajo ingresada, se realizará con el uso de
+          la plataforma <b> <img style="height: 1.4rem;" src="assets/img/logo-icon-asana.svg" alt=""> asana</b> mediante
+          el siguiente procedimiento:
+        </p>
+        <br />
+        <ul>
+          <div class="second-column-img">
+            <figure class="img-content">
+              <img style="width: 50%;" class="img-lateral" src="assets/img/ingress-op.png" alt="">
+            </figure>
+          </div>
+          <li>Ingreso de Orden de Producción</li>
+          <div class="cabecera"></div>
+          <div class="cabecera"></div>
+
+          <div class="second-column-img">
+            <figure class="img-content">
+              <img style="width: 100%;" class="img-lateral" src="assets/img/id.png" alt="">
+            </figure>
+          </div>
+          <li>Firma de recibido en el apartado indicado de la orden de producción, con fecha y hora.</li>
+          <div class="cabecera"></div>
+          <div class="cabecera"></div>
+
+
+          <div class="second-column-img">
+            <figure class="img-content">
+              <img style="width: 100%;" class="img-lateral" src="assets/img/OPtoASANA.PNG" alt="">
+            </figure>
+            <br />
+          </div>
+          <li>Registro de Orden de Producción en la plataforma de <img style="height: 1.4rem;"
+              src="assets/img/logo-icon-asana.svg" alt=""> asana, en la columna de <br>
+            <b>INGRESO DE O.P.</b>, agregando imagen referencial y especificaciones incluidas en <br> la orden de
+            producción.
+          </li>
+          <div class="cabecera"></div>
+          <div class="cabecera"></div>
+
+          <div class="second-column-img">
+            <figure class="img-content">
+              <img style="width: 100%;" class="img-lateral" src="assets/img/ingress-cut.PNG" alt="">
+            </figure>
+            <br />
+          </div>
+          <li>El nombre de la tarea se estructurará mediante la siguiente nomenclatura: <br>
+            <b>No. ORDEN DE PRODUCCIÓN / NOMBRE DEL PROYECTO / CLIENTE</b>
+          </li>
+          <div class="cabecera"></div>
+          <div class="cabecera"></div>
+          <div class="second-column-img">
+            <figure class="img-content">
+              <img style="width: 100%;" class="img-lateral" src="assets/img/ingress-cut0.PNG" alt="">
+            </figure>
+            <br />
+          </div>
+          <li>El responsable agregará el nombre de su perfil en el apartado
+            correspondiente para su seguimiento:
+          </li>
+          <div class="cabecera"></div>
+          <div class="cabecera"></div>
+
+          <div class="second-column-img">
+            <figure class="img-content">
+              <img style="width: 100%;" class="img-lateral" src="assets/img/ingress-cut1.PNG" alt="">
+            </figure>
+            <br />
+          </div>
+
+          <li>La fecha de entrega se referenciará a la que se encuentre en la orden de producción:
+          </li>
+          <div class="cabecera"></div>
+          <div class="cabecera"></div>
+
+          <div class="second-column-img">
+            <figure class="img-content">
+              <img style="width: 100%;" class="img-lateral" src="assets/img/ingress-cut2.PNG" alt="">
+            </figure>
+            <br />
+          </div>
+          <li>En nivel de prioridad dependerá de la <b> Fecha de entrega</b>, el <b>Programa de Producción</b> y de las
+            <br>
+            <b>PRIORIDADES</b> que el cumplimiento de los objetivos requiera.
+          </li>
+          <div class="cabecera"></div>
+          <div class="cabecera"></div>
+
+          <div class="second-column-img">
+            <figure class="img-content">
+              <img style="width: 100%;" class="img-lateral" src="assets/img/ingress-cut3.PNG" alt="">
+            </figure>
+            <br />
+          </div>
+          <li>La descripción se tomará de las especificaciones que la orden de producción <br> y de sus documentos
+            anexos:</li>
+          <div class="cabecera"></div>
+          <div class="cabecera"></div>
+
+
+          <div class="second-column-img">
+            <figure class="img-content">
+              <img style="width: 100%;" class="img-lateral" src="assets/img/ingress-cut4.PNG" alt="">
+            </figure>
+            <br />
+            <figure class="img-content">
+              <img style="width: 60%;" class="img-lateral" src="assets/img/ingress-cut5.PNG" alt="">
+            </figure>
+          </div>
+          <li>Dentro del apartado <b>Descripción</b> pegaremos una imagen referente al producto <br> a elaborar tomada
+            de la orden de producción o de su archivo directamente.</li>
+          <div class="cabecera"></div>
+          <div class="cabecera"></div>
+          <div class="cabecera"></div>
+          <div class="cabecera"></div>
+
+
+          <li>Los registros se desplazarán entre columnas según su estado: <br>
+
+            <table style="width: 75rem;" class="content-table">
+
+              <thead>
+                <th>Columna de registro</th>
+                <th>Descripción</th>
+
+              </thead>
+              <tbody>
+                <tr>
+                  <td>INGRESO DE O.P.</td>
+                  <td>En este apartado ingresaremos todo registro de producción que entre al área con estado de
+                    producción normal.</td>
+
+                </tr>
+                <tr>
+                  <td>RETRASOS</td>
+                  <td>En este apartado desplazaremos toda orden de produción que se halla desplazado en su <b>fecha de
+                      entrega</b> , y que sin embargo sigue sin ser una urgencia dentro del programa de producción.</td>
+
+                </tr>
+                <tr>
+                  <td>DISEÑO / ESPECIFICACIÓN EN CURSO</td>
+                  <td>En este apartado desplazaremos los registros que se encuentren en espera de alguna espesificación
+                    para el comienzo de su producción o que requiere de alguna <b>formación</b> o <b>modificación</b>
+                    del diseño para comenzar.</td>
+
+                </tr>
+                <tr>
+                  <td>EN PROCESO</td>
+                  <td>En este aparta desplazaremos los registros que se encuentre en un estado de producción
+                    <b>normal</b>.</td>
+
+                </tr>
+                <tr>
+                  <td>PRIORIDADES / URGENCIAS</td>
+                  <td>En este apartado desplazaremos los registros indicados como <b
+                      style="color: var(--error-color);">urgencia</b> o <b
+                      style="color: var(--error-color);">prioridad</b> por el <b>programa de producción</b>.</td>
+                </tr>
+                <tr>
+                  <td>ACABADO</td>
+                  <td>En este apartado desplazaremos los registros que se encuentren en proceso de <b>acabado</b> y
+                    <b>empaque</b>.</td>
+                </tr>
+                <tr>
+                  <td>COMPLETADOS</td>
+                  <td>En este apartado se desplazarán los registros que se encuentren finalizados y se dispongan al área
+                    de logistica para su envío, los registros permanecerán hasta el aviso satisfactorio de su entrega y
+                    estado del producto, o en su defecto en un periodo de una a dos semanas posteriores a su entrega.
+                  </td>
+                </tr>
+              </tbody>
+
+            </table>
+            <br>
+          </li>
+          <br>
+          <div>
+            <figure style="display: flex;" class="img-content">
+              <img style="width: 30%;" class="img-lateral" src="assets/img/ingress-cut3.PNG" alt="">
+              <img style="width: 30%;" class="img-lateral" src="assets/img/ingress-cut3.PNG" alt="">
+              <img style="width: 30%;" class="img-lateral" src="assets/img/ingress-cut3.PNG" alt="">
+            </figure>
+            <br />
+          </div>
+          <ul>
+            <li>El desplazamiento de registros requiere de una descripción documental en el apartado de comentarios como
+              antecedente de su desarrollo.</li>
+          </ul>
+
+        </ul>
+      </section>
+      <div class="cabecera"></div>
+      <div class="cabecera"></div>
+      <section class="epp">
+        <h2 id="epp">Equipo de protección personal (EPP)</h2> <br>
+        <p>El equipo de protección personal EPP, es un equipo de protección individual destinado a ser portado o utilizado por el trabajador
+          para que le proteja de uno o varios riesgos que puedan amenazar su integridad fisica y seguridad en la realización de sus actividades dentro del área, así como cualquier
+          complemento o accesorio destinado a tal fin. El operador estara obligado a hacer uso del EPP indicado en cada una de sus actividades.</p>
+          <br>
+          <table class="content-table">
+            <caption>Equipo de protección personal EPP</caption>
+            <thead>
+              <th>No.</th>
+              <th>Nombre</th>
+              <th>Imagén</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Mascarilla anti-gases</td>
+                <td><img style="width: 50%;" src="assets/img/mascara-antigas.png" alt=""></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Calzado de seguridad</td>
+                <td><img style="width: 50%;" src="assets/img/bota.png" alt=""></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Protección ocular</td>
+                <td><img style="width: 50%;" src="assets/img/lentes2.png" alt=""></td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Tapones auditivos</td>
+                <td><img style="width: 50%;" src="assets/img/enchufe-de-oido.png" alt=""></td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Guantes de carga</td>
+                <td><img style="width: 50%;" src="assets/img/guantes.png" alt=""></td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Guantes de limpieza</td>
+                <td><img style="width: 35%;" src="assets/img/guantes_lim.png" alt=""></td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>Faja</td>
+                <td><img style="width: 50%;" src="assets/img/faja2.jpg" alt=""></td>
+              </tr>
+            </tbody>
+  
+          </table>
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+      <section class="prime-text">
+        <!-- Usaremos el div "cabecera" como espaciador estandar de 50px y sus multiplos -->
+        <div class="cabecera"></div>
+        <h1>Title</h1>
+        <br />
+        <h2>Subtitle</h2>
+        <br />
+        <h3>Stroke text</h3>
+        <br />
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia
+          laborum repellendus vel perferendis aut non, repellat accusamus. At
+          dicta earum, vel delectus sapiente, deserunt voluptas aperiam
+          ducimus laudantium quasi iusto?
+        </p>
+        <br />
+      </section>
+      <br /><br />
+      <hr><br /><br />
+      <section class="second-text">
+        <h2>Subtitle</h2>
+        <br />
+        <h3>Stroke text</h3>
+        <br />
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia
+          laborum repellendus vel perferendis aut non, repellat accusamus. At
+          dicta earum, vel delectus sapiente, deserunt voluptas aperiam
+          ducimus laudantium quasi iusto? lorem500
+        </p>
+        <br />
+      </section>
+      <br /><br />
+      <hr><br /><br />
+      <section class="third-text">
+        <h3>Stroke text</h3>
+        <br />
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia
+          laborum repellendus vel perferendis aut non, repellat accusamus. At
+          dicta earum, vel delectus sapiente, deserunt voluptas aperiam
+          ducimus laudantium quasi iusto?
+        </p>
+        <br />
+      </section>
+      <br /><br />
+      <hr><br /><br />
+      <section class="normal-text">
+        <p>Normal text</p>
+        <br />
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia
+          laborum repellendus vel perferendis aut non, repellat accusamus. At
+          dicta earum, vel delectus sapiente, deserunt voluptas aperiam
+          ducimus laudantium quasi iusto?
+        </p>
+        <br />
+      </section>
+      <br /><br />
+      <hr><br /><br />
+      <section class="highlighted-text">
+        <p>Highlighted text</p>
+        <br />
+        <p>
+          <b>Lorem en negrita</b>, ipsum dolor sit amet consectetur
+          adipisicing elit. <i><b>Officia earum,</b> en cursiva y negrita</i>,
+          laborum repellendus vel perferendis aut non, repellat accusamus.
+          <u><b>At dicta</b> subrayado y en gregrita</u> vel delectus
+          sapiente, deserunt voluptas aperiam ducimus laudantium quasi iusto?
+        </p>
+        <br />
+      </section>
+      <br /><br />
+      <hr><br /><br />
+      <section class="double-column-text-bold-title">
+        <h2>Double column text bold-title</h2>
+        <div class="second-column-bold-title">
+          <h2>Double column text bold-title</h2>
+          <br />
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia
+            laborum repellendus vel perferendis aut non, repellat accusamus.
+            At dicta earum, vel delectus sapiente, deserunt voluptas aperiam
+            ducimus laudantium quasi iusto?
+          </p>
+          <br />
+        </div>
+        <br />
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia
+          laborum repellendus vel perferendis aut non, repellat accusamus. At
+          dicta earum, vel delectus sapiente, deserunt voluptas aperiam
+          ducimus laudantium quasi iusto? Lorem ipsum, dolor sit amet
+          consectetur adipisicing elit. Odio corrupti vitae saepe eius dolorum
+          nihil consequatur repellat officia, nesciunt neque earum eos
+          eveniet, cupiditate molestiae tempora deserunt. Pariatur, aut rem
+          doloribus quos in nobis quas recusandae temporibus commodi
+          laudantium saepe, porro minima optio ipsa deserunt aspernatur
+          laborum repellendus corrupti ipsum beatae! Velit itaque quaerat quos
+          harum corrupti delectus quibusdam natus commodi voluptatibus dicta.
+          Aperiam quisquam quis beatae rem enim fugit earum facere nisi quia,
+          alias quod harum dignissimos autem, non laborum? Perferendis minus
+          culpa veniam praesentium alias suscipit molestiae! Quia quos libero
+          voluptate quam ipsum accusamus officiis consequatur molestiae
+          corrupti?
+        </p>
+        <br />
+      </section>
+      <br /><br />
+      <hr><br /><br />
+      <section class="section-img"></section>
+
+      <section class="double-column-text-normal-bold">
+        <h2>Double column text normal-bold title</h2>
+        <div class="second-column-normal-bold">
+          <h3>Double column text normal-bold-title</h3>
+          <br />
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia
+            laborum repellendus vel perferendis aut non, repellat accusamus.
+            At dicta earum, vel delectus sapiente, deserunt voluptas aperiam
+            ducimus laudantium quasi iusto?
+          </p>
+          <br />
+        </div>
+        <br />
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia
+          laborum repellendus vel perferendis aut non, repellat accusamus. At
+          dicta earum, vel delectus sapiente, deserunt voluptas aperiam
+          ducimus laudantium quasi iusto? Lorem ipsum, dolor sit amet
+          consectetur adipisicing elit. Odio corrupti vitae saepe eius dolorum
+          nihil consequatur repellat officia, nesciunt neque earum eos
+          eveniet, cupiditate molestiae tempora deserunt. Pariatur, aut rem
+          doloribus quos in nobis quas recusandae temporibus commodi
+          laudantium saepe, porro minima optio ipsa deserunt aspernatur
+          laborum repellendus corrupti ipsum beatae! Velit itaque quaerat quos
+          harum corrupti delectus quibusdam natus commodi voluptatibus dicta.
+          Aperiam quisquam quis beatae rem enim fugit earum facere nisi quia,
+          alias quod harum dignissimos autem, non laborum? Perferendis minus
+          culpa veniam praesentium alias suscipit molestiae! Quia quos libero
+          voluptate quam ipsum accusamus officiis consequatur molestiae
+          corrupti?
+        </p>
+        <br />
+      </section>
+      <br /><br />
+      <hr><br /><br />
+      <section class="section-img"></section>
+
+      <section class="double-column-text-bold-normal">
+        <h2>Double column text normal-bold title</h2>
+        <div class="second-column-bold-normal">
+          <h3>Double column text normal-bold-title</h3>
+          <br />
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia
+            laborum repellendus vel perferendis aut non, repellat accusamus.
+            At dicta earum, vel delectus sapiente, deserunt voluptas aperiam
+            ducimus laudantium quasi iusto?
+          </p>
+          <br />
+        </div>
+        <br />
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia
+          laborum repellendus vel perferendis aut non, repellat accusamus. At
+          dicta earum, vel delectus sapiente, deserunt voluptas aperiam
+          ducimus laudantium quasi iusto? Lorem ipsum, dolor sit amet
+          consectetur adipisicing elit. Odio corrupti vitae saepe eius dolorum
+          nihil consequatur repellat officia, nesciunt neque earum eos
+          eveniet, cupiditate molestiae tempora deserunt. Pariatur, aut rem
+          doloribus quos in nobis quas recusandae temporibus commodi
+          laudantium saepe, porro minima optio ipsa deserunt aspernatur
+          laborum repellendus corrupti ipsum beatae! Velit itaque quaerat quos
+          harum corrupti delectus quibusdam natus commodi voluptatibus dicta.
+          Aperiam quisquam quis beatae rem enim fugit earum facere nisi quia,
+          alias quod harum dignissimos autem, non laborum? Perferendis minus
+          culpa veniam praesentium alias suscipit molestiae! Quia quos libero
+          voluptate quam ipsum accusamus officiis consequatur molestiae
+          corrupti?
+        </p>
+        <br />
+      </section>
+      <br /><br />
+      <hr><br /><br />
+      <section class="section-img"></section>
+
+      </section>
+      <br /><br /><br /><br />
+      <section class="double-column-text-bold-title">
+        <h2>Double column text and image</h2>
+        <div class="second-column-img">
+          <h2>Double column img content</h2>
+          <br />
+          <figure class="img-content">
+            <img class="img-lateral" src="assets/img/image-not-found-icon.svg" alt="">
+          </figure>
+
+          <br />
+        </div>
+        <br />
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia
+          laborum repellendus vel perferendis aut non, repellat accusamus. At
+          dicta earum, vel delectus sapiente, deserunt voluptas aperiam
+          ducimus laudantium quasi iusto? Lorem ipsum, dolor sit amet
+          consectetur adipisicing elit. Odio corrupti vitae saepe eius dolorum
+          nihil consequatur repellat officia, nesciunt neque earum eos
+          eveniet, cupiditate molestiae tempora deserunt. Pariatur, aut rem
+          doloribus quos in nobis quas recusandae temporibus commodi
+          laudantium saepe, porro minima optio ipsa deserunt aspernatur
+          laborum repellendus corrupti ipsum beatae! Velit itaque quaerat quos
+          harum corrupti delectus quibusdam natus commodi voluptatibus dicta.
+          Aperiam quisquam quis beatae rem enim fugit earum facere nisi quia,
+          alias quod harum dignissimos autem, non laborum? Perferendis minus
+          culpa veniam praesentium alias suscipit molestiae! Quia quos libero
+          voluptate quam ipsum accusamus officiis consequatur molestiae
+          corrupti?
+        </p>
+        <br />
+      </section>
+      <br /><br><br><br><br><br><br />
+      <hr><br /><br /><br><br><br><br><br><br>
+      <section class="double-column-text-bold-title">
+        <h2>Double column text and video</h2>
+        <div class="second-column-img">
+          <h2>Double column video content</h2>
+          <br />
+
+
+          <br />
+        </div>
+        <br />
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia
+          laborum repellendus vel perferendis aut non, repellat accusamus. At
+          dicta earum, vel delectus sapiente, deserunt voluptas aperiam
+          ducimus laudantium quasi iusto? Lorem ipsum, dolor sit amet
+          consectetur adipisicing elit. Odio corrupti vitae saepe eius dolorum
+          nihil consequatur repellat officia, nesciunt neque earum eos
+          eveniet, cupiditate molestiae tempora deserunt. Pariatur, aut rem
+          doloribus quos in nobis quas recusandae temporibus commodi
+          laudantium saepe, porro minima optio ipsa deserunt aspernatur
+          laborum repellendus corrupti ipsum beatae! Velit itaque quaerat quos
+          harum corrupti delectus quibusdam natus commodi voluptatibus dicta.
+          Aperiam quisquam quis beatae rem enim fugit earum facere nisi quia,
+          alias quod harum dignissimos autem, non laborum? Perferendis minus
+          culpa veniam praesentium alias suscipit molestiae! Quia quos libero
+          voluptate quam ipsum accusamus officiis consequatur molestiae
+          corrupti?
+        </p>
+        <br />
+      </section>
+      <br /><br />
+      <hr><br /><br />
+
+      <section class="second-text">
+
+        <br />
+        <h3>Stroke text</h3>
+        <br />
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia
+          laborum repellendus vel perferendis aut non, repellat accusamus. At
+          dicta earum, vel delectus sapiente, deserunt voluptas aperiam
+          ducimus laudantium quasi iusto? Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum inventore qui
+          tempora, ipsa, voluptatibus itaque dolorem officia eligendi harum neque alias ut at nam commodi delectus
+          temporibus autem dolorum eos ab animi nemo perspiciatis! Non, porro. Sunt veniam aperiam, praesentium tempora
+          quas repellat, expedita harum quae ex placeat porro quia ut adipisci nesciunt, rem quo voluptas numquam nam
+          eos accusamus. Nihil, modi nostrum sunt laboriosam non cum quae facilis quo! Repellendus architecto inventore
+          eius!
+        </p>
+        <br />
+        <ul>
+          <li>one desctiption</li>
+          <li>two description</li>
+          <li>three description</li>
+          <li>four description</li>
+          <li>five description</li>
+        </ul>
+      </section>
+      <br /><br />
+      <hr><br /><br />
+
+      <section class="second-text">
+
+        <br />
+        <h3>Stroke text</h3>
+        <br />
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia
+          laborum repellendus vel perferendis aut non, repellat accusamus. At
+          dicta earum, vel delectus sapiente, deserunt voluptas aperiam
+          ducimus laudantium quasi iusto? Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum inventore qui
+          tempora, ipsa, voluptatibus itaque dolorem officia eligendi harum neque alias ut at nam commodi delectus
+          temporibus autem dolorum eos ab animi nemo perspiciatis! Non, porro. Sunt veniam aperiam, praesentium tempora
+          quas repellat, expedita harum quae ex placeat porro quia ut adipisci nesciunt, rem quo voluptas numquam nam
+          eos accusamus. Nihil, modi nostrum sunt laboriosam non cum quae facilis quo! Repellendus architecto inventore
+          eius!
+        </p>
+        <br />
+        <ol>
+          <li>one desctiption</li>
+          <li>two description</li>
+          <li>three description</li>
+          <li>four description</li>
+          <li>five description</li>
+        </ol>
+      </section>
+      <br /><br />
+      <hr><br /><br />
+
+      <section class="second-text">
+
+        <br />
+        <h3>Stroke text</h3>
+        <br />
+        <ol class="second-column-img">
+          <li>one desctiption</li>
+          <li>two description</li>
+          <li>three description</li>
+          <li>four description</li>
+          <li>five description</li>
+        </ol>
+
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia
+          laborum repellendus vel perferendis aut non, repellat accusamus. At
+          dicta earum, vel delectus sapiente, deserunt voluptas aperiam
+          ducimus laudantium quasi iusto? Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum inventore qui
+          tempora, ipsa, voluptatibus itaque dolorem officia eligendi harum neque alias ut at nam commodi delectus
+          temporibus autem dolorum eos ab animi nemo perspiciatis! Non, porro. Sunt veniam aperiam, praesentium tempora
+          quas repellat, expedita harum quae ex placeat porro quia ut adipisci nesciunt, rem quo voluptas numquam nam
+          eos accusamus. Nihil, modi nostrum sunt laboriosam non cum quae facilis quo! Repellendus architecto inventore
+          eius!
+        </p>
+        <br />
+
+      </section>
+      <br /><br />
+      <hr><br /><br />
+
+
+      <section class="second-text">
+
+        <br />
+        <h3>Stroke text</h3>
+        <br />
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia
+          laborum repellendus vel perferendis aut non, repellat accusamus. At
+          dicta earum, vel delectus sapiente, deserunt voluptas aperiam
+          ducimus laudantium quasi iusto? Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum inventore qui
+          tempora, ipsa, voluptatibus itaque dolorem officia eligendi harum neque alias ut at nam commodi delectus
+          temporibus autem dolorum eos ab animi nemo perspiciatis! Non, porro. Sunt veniam aperiam, praesentium tempora
+          quas repellat, expedita harum quae ex placeat porro quia ut adipisci nesciunt, rem quo voluptas numquam nam
+          eos accusamus. Nihil, modi nostrum sunt laboriosam non cum quae facilis quo! Repellendus architecto inventore
+          eius!
+        </p>
+        <br />
+        <table class="content-table">
+          <caption>This is a table</caption>
+          <thead>
+            <th>No.</th>
+            <th>Item</th>
+            <th>Description</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>apple</td>
+              <td>fruit</td>
+            </tr>
+            <tr class="active-row">
+              <td>2</td>
+              <td>limon</td>
+              <td>fruit</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>onion</td>
+              <td>vegetal</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>apple</td>
+              <td>fruit</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>peach</td>
+              <td>fruit</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>onion</td>
+              <td>vegetal</td>
+            </tr>
+          </tbody>
+
+        </table>
+      </section>
+      <br /><br />
+      <hr><br /><br />
+
+
+
+      <section class="second-text">
+        <table class="content-table2 second-column-img">
+          <thead>
+            <th>No.</th>
+            <th>Item</th>
+            <th>Description</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>apple</td>
+              <td>fruit</td>
+            </tr>
+            <tr class="active-row">
+              <td>2</td>
+              <td>limon</td>
+              <td>fruit</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>onion</td>
+              <td>vegetal</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>apple</td>
+              <td>fruit</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>peach</td>
+              <td>fruit</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>onion</td>
+              <td>vegetal</td>
+            </tr>
+          </tbody>
+
+        </table>
+        <br />
+        <h3>Stroke text</h3>
+
+        <br />
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia
+          laborum repellendus vel perferendis aut non, repellat accusamus. At
+          dicta earum, vel delectus sapiente, deserunt voluptas aperiam
+          ducimus laudantium quasi iusto? Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum inventore qui
+          tempora, ipsa, voluptatibus itaque dolorem officia eligendi harum neque alias ut at nam commodi delectus
+          temporibus autem dolorum eos ab animi nemo perspiciatis! Non, porro. Sunt veniam aperiam, praesentium tempora
+          quas repellat, expedita harum quae ex placeat porro quia ut adipisci nesciunt, rem quo voluptas numquam nam
+          eos accusamus. Nihil, modi nostrum sunt laboriosam non cum quae facilis quo! Repellendus architecto inventore
+          eius!
+        </p>
+        <br />
+
+      </section>
+      <br /><br />
+      <hr><br /><br />
+
+
+    </main>
+  </div>
+</body>
+
+</html>
