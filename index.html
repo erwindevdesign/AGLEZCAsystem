@@ -115,7 +115,6 @@
       color: var(--gray-sub-color);
       border-radius: 2rem;
       list-style: none;
-      margin-top: 1rem;
       padding: 0.9rem;
       width: 80%;
 
@@ -326,6 +325,10 @@
     p {
       text-align: justify;
     }
+
+    table th:nth-child(3n+1) {
+      text-align: center;
+    }
   </style>
 </head>
 
@@ -344,14 +347,14 @@
             <li id="sub-title"><a href="index.html#process-map">Mapeo de procesos</a></li>
             <li id="sub-title"><a href="index.html#cadena-valor">Cadena de valor</a></li>
             <li><a href="index.html#op">Orden de producción</a></li>
-            <li id="sub-title"><a href="index.html#production-order">Seguimiento de Ordenes de
-                Producción en proceso</a></li>
+            <li id="sub-title"><a href="index.html#production-order">Seguimiento de Órdenes de
+                Producción</a></li>
             <li id="sub-title"><a href="index.html#asana"><img style="height: 1.4rem; margin-right: 0.5rem;"
                   src="assets/img/logo-icon-asana.svg" alt=""> asana </a></li>
-            <li id="sub-title"><a href="index.html#proc1">Procedimiento para el seguimiento de ordenes de producción</a></li>      
+            <li id="sub-title"><a href="index.html#proc1">Seguimiento de órdenes </a></li>
             <li id="navabar-index-list-four"><a href="index.html#epp">Equipo de protección personal (EPP)</a></li>
-            <li id="navabar-index-list-five">item-5</li>
-            <li id="navabar-index-list-six">item-6</li>
+            <li id="sub-title"><a href="index.html#mantt_epp">Mantenimiento de EPP</a></li>
+            <li id="sub-title"><a href="index.html#regis-epp">Seguimiento de uso de EPP</a></li>
             <li id="navabar-index-list-seven">item-7</li>
             <li id="navabar-index-list-eight">item-8</li>
             <li id="navabar-index-list-nine">item-9</li>
@@ -422,7 +425,7 @@
           una metodología dinámica e iterativa, es decir, que los procesos
           progresen en la creación de un producto realizando entregas cíclicas
           llamadas <b>avances</b> las cuales alcanzarán los objetivos en la
-          construcción de un producto en función de sus requerimientos y las capasidades del equipo de trabajo.
+          construcción de un producto en función de sus requerimientos y las capacidades del equipo de trabajo.
         </p>
 
         <figure class="workflow-tiny-img">
@@ -534,7 +537,7 @@
           los requerimientos y necesidades del usuario, ampliando la gestión de recursos en los procesos requeridos, la
           creación y
           planificación de etapas de elaboración de un producto dentro de un
-          flujo de trabajo organizado aseguraran el alcance de los objetivos
+          flujo de trabajo organizado que aseguraran el alcance de los objetivos
           propuestos para la realización de un producto. <br /><br />
           Las siguientes guías ayudarán a la compresión de la construcción de un flujo de
           trabajo y su implementación en los recursos que proporciona la
@@ -573,11 +576,12 @@
         <h2 id="cadena-valor">Cadena de valor</h2>
         <p>
           La cadena de valor es un modelo que permite describir el impacto de las actividades y diferentes áreas de una
-          organización generando valor al producto final en funsión de un enfoque general en su cadena productiva.
+          organización generando valor al producto final en función de un enfoque general en su cadena productiva.
         </p><br><br>
         <h3>Cadena de valor de procesos</h3>
         <figure>
-          <img style="margin-left: -1.5vw; width: 35vw" src="assets/img/cadena.svg" alt=""> <!-- AQUI FALTA UNA IMAGEN -->
+          <img style="margin-left: -1.5vw; width: 35vw" src="assets/img/cadena.svg" alt="">
+          <!-- AQUI FALTA UNA IMAGEN -->
         </figure>
 
       </section>
@@ -593,7 +597,7 @@
 
             Antes de empezar con la producción, se realiza una planificación de materiales y recursos,
             para gestionar el alcance del objetivo que es la realización de los productos solicitados por los clientes
-            con los estandares de calidad y servicio para convertirse en distintivo del servicio realizado.
+            con los estándares de calidad y servicio para convertirse en distintivo del servicio realizado.
 
             Las órdenes de producción son componentes esenciales de la funcionalidad de los procesos y contienen la
             siguiente información:
@@ -685,7 +689,7 @@
         </div>
         <!-- Usaremos el div "cabecera" como espaciador estandar de 50px y sus multiplos -->
         <div id="production-order" class="cabecera"></div>
-        <h2>Seguimiento de Ordenes de Producción en proceso</h2>
+        <h2>Seguimiento de Órdenes de Producción en proceso</h2>
         <br />
         <p>
           En <b>impresión digital</b> para el seguimiento de los
@@ -731,13 +735,13 @@
           cuenta de
           <b><img style="height: 1.4rem;" src="assets/img/logo-icon-asana.svg" alt=""> asana </b> | Guía</a><br /><br />
         <a class="link" href="https://asana.com/es/guide/get-started/begin/quick-start" target="”_blank”">Guía de uso de
-          <b><img style="height: 1.4rem;" src="assets/img/logo-icon-asana.svg"  alt=""> asana </b> |
+          <b><img style="height: 1.4rem;" src="assets/img/logo-icon-asana.svg" alt=""> asana </b> |
           Guía</a><br /><br />
         </p>
       </section>
       <div class="cabecera"></div>
       <section class="double-column-text-bold-title">
-        <h2 id="proc1" >Procedimiento para el seguimiento de ordenes de producción</h2>
+        <h2 id="proc1">Seguimiento de ordenes de producción</h2>
         <br />
         <p>
           El seguimiento <b>conjunto</b> de producción en el área y la actualización de su <b>estado</b> en cada orden
@@ -875,13 +879,13 @@
                 </tr>
                 <tr>
                   <td>RETRASOS</td>
-                  <td>En este apartado desplazaremos toda orden de produción que se halla desplazado en su <b>fecha de
+                  <td>En este apartado desplazaremos toda orden de producción que se halla desplazado en su <b>fecha de
                       entrega</b> , y que sin embargo sigue sin ser una urgencia dentro del programa de producción.</td>
 
                 </tr>
                 <tr>
                   <td>DISEÑO / ESPECIFICACIÓN EN CURSO</td>
-                  <td>En este apartado desplazaremos los registros que se encuentren en espera de alguna espesificación
+                  <td>En este apartado desplazaremos los registros que se encuentren en espera de alguna especificación
                     para el comienzo de su producción o que requiere de alguna <b>formación</b> o <b>modificación</b>
                     del diseño para comenzar.</td>
 
@@ -889,7 +893,8 @@
                 <tr>
                   <td>EN PROCESO</td>
                   <td>En este aparta desplazaremos los registros que se encuentre en un estado de producción
-                    <b>normal</b>.</td>
+                    <b>normal</b>.
+                  </td>
 
                 </tr>
                 <tr>
@@ -901,12 +906,13 @@
                 <tr>
                   <td>ACABADO</td>
                   <td>En este apartado desplazaremos los registros que se encuentren en proceso de <b>acabado</b> y
-                    <b>empaque</b>.</td>
+                    <b>empaque</b>.
+                  </td>
                 </tr>
                 <tr>
                   <td>COMPLETADOS</td>
                   <td>En este apartado se desplazarán los registros que se encuentren finalizados y se dispongan al área
-                    de logistica para su envío, los registros permanecerán hasta el aviso satisfactorio de su entrega y
+                    de logística para su envío, los registros permanecerán hasta el aviso satisfactorio de su entrega y
                     estado del producto, o en su defecto en un periodo de una a dos semanas posteriores a su entrega.
                   </td>
                 </tr>
@@ -935,67 +941,90 @@
       <div class="cabecera"></div>
       <section class="epp">
         <h2 id="epp">Equipo de protección personal (EPP)</h2> <br>
-        <p>El equipo de protección personal EPP, es un equipo de protección individual destinado a ser portado o utilizado por el trabajador
-          para que le proteja de uno o varios riesgos que puedan amenazar su integridad fisica y seguridad en la realización de sus actividades dentro del área, así como cualquier
-          complemento o accesorio destinado a tal fin. El operador estara obligado a hacer uso, reguardo y lipieza del EPP indicado en cada una de sus actividades.</p>
-          <br>
-          <table class="content-table">
-            <caption>Equipo de protección personal EPP</caption>
-            <thead>
-              <th>No.</th>
-              <th>Nombre</th>
-              <th>Imagén</th>
-              <th>Mantenimiento / Limpieza</th>
-              <th>Periodo</th>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>Mascarilla anti-gases</td>
-                <td><img style="width: 50%;" src="assets/img/mascara-antigas.png" alt=""></td>
-                <td>La limpieza de la mascarilla anti-gases requiere el retiro del arnes <br>
-                   y de los filtros para solo lavar con agua y jabón las partes plasticas.</td>
-                   <td>Al inicio y al temino del uso.</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>Calzado de seguridad</td>
-                <td><img style="width: 50%;" src="assets/img/bota.png" alt=""></td>
-                <td>Al calzado de seguridad se le retirara el polvo con un paño seco.</td>
-                <td>Al inicio y al temino del uso.</td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>Protección ocular</td>
-                <td><img style="width: 50%;" src="assets/img/lentes2.png" alt=""></td>
-                <td>La limpieza de la protección ocular se realizara con un paño seco, en caso de requerirlo limpiar con solución limpiadora de superficies.</td>
-                <td>Al inicio y al temino del uso.</td>
-              </tr>
-              <tr>
-                <td>4</td>
-                <td>Tapones auditivos</td>
-                <td><img style="width: 50%;" src="assets/img/enchufe-de-oido.png" alt=""></td>
-              </tr>
-              <tr>
-                <td>5</td>
-                <td>Guantes de carga</td>
-                <td><img style="width: 50%;" src="assets/img/guantes.png" alt=""></td>
-              </tr>
-              <tr>
-                <td>6</td>
-                <td>Guantes de limpieza</td>
-                <td><img style="width: 35%;" src="assets/img/guantes_lim.png" alt=""></td>
-              </tr>
-              <tr>
-                <td>7</td>
-                <td>Faja</td>
-                <td><img style="width: 50%;" src="assets/img/faja2.jpg" alt=""></td>
-              </tr>
-            </tbody>
-  
-          </table>
+        <p>El equipo de protección personal EPP, es un equipo de protección individual destinado a ser portado o
+          resguardado por el trabajador
+          para que le proteja de los riesgos que puedan amenazar su integridad física y seguridad en la realización de
+          sus actividades dentro del área, así como cualquier
+          complemento o accesorio destinado a tal fin. El operador estará obligado a hacer uso, reguardo y limpieza del
+          EPP indicado en cada una de sus actividades como a continuación se describe.</p>
+        <br>
+        <table class="content-table">
+          <caption id="mantt_epp">Mantenimiento de EPP</caption>
+          <thead>
+            <th>No.</th>
+            <th>Nombre</th>
+            <th>Imagen</th>
+            <th>Mantenimiento / Limpieza</th>
+            <th>Periodo</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Mascarilla anti-gases</td>
+              <td><img style="width: 50%;" src="assets/img/mascara-antigas.png" alt=""></td>
+              <td>La limpieza de la mascarilla anti-gases requiere el retiro del arnés <br>
+                y de los filtros para solo lavar con agua y jabón las partes plásticas.</td>
+              <td>Al inicio y al término del uso.</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Calzado de seguridad</td>
+              <td><img style="width: 50%;" src="assets/img/bota.png" alt=""></td>
+              <td>Al calzado de seguridad se le retirara el polvo con un paño seco.</td>
+              <td>Al inicio y al término del uso.</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Protección ocular</td>
+              <td><img style="width: 50%;" src="assets/img/lentes2.png" alt=""></td>
+              <td>La limpieza de la protección ocular se realizará con un paño seco, <br> en caso de requerirlo limpiar
+                con solución limpiadora de superficies.</td>
+              <td>Al inicio y al término del uso.</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Tapones auditivos</td>
+              <td><img style="width: 50%;" src="assets/img/enchufe-de-oido.png" alt=""></td>
+              <td>La limpieza de los tapones auditivos se realizará con agua y jabón <br> solo de las partes plásticas
+              </td>
+              <td>Al inicio y al término del uso.</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Guantes de carga</td>
+              <td><img style="width: 50%;" src="assets/img/guantes.png" alt=""></td>
+              <td>Solo si los guantes se contaminan con alguna sustancia, lavar con <br> agua y jabón. <br> <br>Revisar
+                el desgaste del material</td>
+              <td>Solo en la situación especificada</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Guantes de limpieza</td>
+              <td><img style="width: 35%;" src="assets/img/guantes_lim.png" alt=""></td>
+              <td>Solo si los guantes se contaminan con alguna sustancia, lavar con <br> agua y jabón. <br> <br>Revisar
+                el desgaste del material</td>
+              <td>Solo en la situación especificada</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>Faja</td>
+              <td><img style="width: 50%;" src="assets/img/faja2.jpg" alt=""></td>
+              <td>Solo si los guantes se contaminan con alguna sustancia, lavar con <br> agua y jabón. <br> <br>Revisar
+                el desgaste del material</td>
+              <td>Solo en la situación especificada</td>
+            </tr>
+          </tbody>
+        </table>
       </section>
-
+      <div class="cabecera"></div>
+      <section>
+        <h3 id="regis-epp">Seguimiento de uso de EPP</h3> <br>
+        <p>El seguimiento de uso del EPP de operación en el área se llevará mediante un registro en formulario para la
+          proyección periódica de su adquisición y la trazabilidad de su uso, creando una recopilación de datos que
+          ayudarán a contar en stock con el EPP de reemplazo y sus componentes estimados en el periodo de uso obtenido
+          del análisis de los datos recopilados. </p>
+      </section>
+      
 
 
 
