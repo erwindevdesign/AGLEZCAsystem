@@ -221,37 +221,43 @@ Index
     - buenas practicas de docuemntación
     * img: pantallas de uso de formularios
 
-5. **EPP** (equipo d eprotección personal)
-    - Mantt. y lim,pieza de EPP
-    - **proc3**: procedimiento de registro de uso de epp.
-    
+5. Formularios de registro
+    - repositorio / estructura
+    - descripción
+    - control de versiones
+    - sustitución, respaldo y documentación de errores.
 
 6. Registro de solicitudes a **Almacén**
     - **proc4**: procedimiento de registro de solicitud de matyeriales e insumos  **Almacén**.
     - Trazabilidad de material impreso y en área.
 
-7. Espesificaciones de archivos tipo **salida** para impresión.
+7. **EPP** (equipo d eprotección personal)
+    - Mantt. y lim,pieza de EPP
+    - **proc3**: procedimiento de registro de uso de epp.
+    
+
+8. Espesificaciones de archivos tipo **salida** para impresión.
     - creación de intructivo.
 
-8. Procesos de operación de equipos.
+9. Procesos de operación de equipos.
     - **proc5**: procedimiento de operación en equipos de impresión, corte/suaje y laminado.
     * img: vectores de ejemplificación de operación en equipos, procesos a realizar, instrumentos y herramientas utilizadas. (linea/ estilo de diseño)
 
-7. Trazabilidad de material.
+10. Trazabilidad de material.
     - **proc6**: procedimiento de registro de consumo de material procesado.
     * img: imagenes de etiquetas de trazabilidad de material impreso.
     - registrro y disposición de sobre producción y merma en los procesos.
     - **proc7**: procedimiento de registrro y disposición de sobre producción y merma en los procesos.
 
-8. Mantenimiento (MANTT)
+11. Mantenimiento (MANTT)
     - **proc7**: procedimiento de registro de rezlización de mantenimientos.
     - Mantt. de uso.
     - Mantt. preventivo.
     - Mantt correctivo.
     * img: vectores de ejemplificación de matenimientos en equipos
 
-9. Indicadores
+12. Indicadores
 
-10. Workflows, metodologias, NOM y estandares internacionales.
+13. Workflows, metodologias, NOM y estandares internacionales.
 
-11. Footer
+14. Footer

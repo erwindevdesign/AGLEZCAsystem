@@ -47,7 +47,7 @@ SGDP (sistema de gestion de datos en produción)
 
 Se desarrolla formularios para cada requerimiento con la siguiente nomenclatura técnica:
 
-> Seguimiento de producción (RP: registro de producción)
+> Seguimiento de producción (RP: registro de producción,)
 
 	- RP-1-v0.0.1.xlsm
 	- RP-2-v0.0.1.xlsm
@@ -56,16 +56,16 @@ Se desarrolla formularios para cada requerimiento con la siguiente nomenclatura 
 
 > Seguimiento de consumo (RC: registro de consumo)
 
-	- RC-MAT-Rollo-v0.0.1.xlsm
+	- RC-MAT-R-v0.0.1.xlsm
 
 > Uso de  EPP (RU: registro de uso)
 
-	- RU-EPP-BANDAGE-v0.0.1.xlsm
-	- RU-EPP-GLASSES-v0.0.1.xlsm
-	- RU-EPP-GLOVES-v0.0.1.xlsm
-	- RU-EPP-MASK-v0.0.1.xlsm
-	- RU-EPP-PLUG-v0.0.1.xlsm
-	- RU-EPP-SHOD-v0.0.1.xlsm
+	- RU-EPP-FAJA-v0.0.1.xlsm
+	- RU-EPP-LENTES-v0.0.1.xlsm
+	- RU-EPP-GUANTES-v0.0.1.xlsm
+	- RU-EPP-MASCARILLA-v0.0.1.xlsm
+	- RU-EPP-TAPONES-v0.0.1.xlsm
+	- RU-EPP-CALZADO-v0.0.1.xlsm
 
 > Seguimiento de mantenimientos en equipos (RM: registro de matenimiento)
 
