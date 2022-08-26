@@ -221,23 +221,27 @@ Index
     - buenas practicas de docuemntación
     * img: pantallas de uso de formularios
 
-5. Formularios de registro
+x. Espesificaciones de archivos tipo **salida** para impresión.
+- creación de intructivo.
+
+5. Solicitudes a **Almacén**
+    - **proc4**: procedimiento de registro de solicitud de matyeriales e insumos  **Almacén**.
+    - Trazabilidad de material impreso y en área.
+
+6. Formularios de registro
     - repositorio / estructura
     - descripción
     - control de versiones
     - sustitución, respaldo y documentación de errores.
 
-6. Registro de solicitudes a **Almacén**
-    - **proc4**: procedimiento de registro de solicitud de matyeriales e insumos  **Almacén**.
-    - Trazabilidad de material impreso y en área.
+
 
 7. **EPP** (equipo d eprotección personal)
     - Mantt. y lim,pieza de EPP
     - **proc3**: procedimiento de registro de uso de epp.
     
 
-8. Espesificaciones de archivos tipo **salida** para impresión.
-    - creación de intructivo.
+
 
 9. Procesos de operación de equipos.
     - **proc5**: procedimiento de operación en equipos de impresión, corte/suaje y laminado.
