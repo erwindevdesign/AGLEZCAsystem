@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title%}{% endblock %}</title>
+    <meta name="description" content="{% block description%}{% endblock %}">
+    <meta name="author" content="erwindevdesign">
+    <meta http-equiv="cache-control" content="no-cache"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <section class="main-content" id="main-content">
+        <section>
+            {% block content%}{% endblock%}
+        </section>
+    </section>
+
+
+
+</body>
+</html>
