@@ -1,4 +1,5 @@
-# AGLEZCAsystem :card_index:
+# Aglezca-System :card_index:
+
 # Sistema de gestión de datos en producción AGLEZCA S.A. de C.V. (México)
 
 ## Indice
@@ -8,16 +9,15 @@
 
 ## Visión general y alcances <a name="id1"></a>
 
-El sistema de gestión de datos - **SGD** -, se desarrolla como metodo para la recopilación, el almacenamiento y la consulta de datos para el desarrollo de indicadores clave **(KPI´s)** y el alcance de objetivos y resultados **(OKR´s)** en funsion de la integración de la información en la toma de desiciones en un entorno de producción real.
+El sistema de gestión de datos - **SGD** -, se desarrolla como metodo para en la recabación, almacenamiento y consulta de datos en busca del desarrollo de indicadores clave **(KPI´s)** y el alcance de objetivos y resultados **(OKR´s)** en funsion de la integración de la información en la toma de desiciones en un entorno de producción real.
+
+### Fase 1
 
 La implementación de formularios para la recabación de datos mediante macros implementadas en hojas de calculo  **VBA** (visual basic for application). Esto nos permitira crear las tablas a normailizar que posteriormente crearán la base de datos relacionando entidades y dependencias, eliminando información inecesaria para estructurar un sistema de gestión de procesos dando seguimiento a los siguientes requerimientos de gestión:
 
 > Seguimiento de producción
 
 	- Impresión JV33
-
-
-
 	- impresión UV
 	- corte cg-160
 	- corte cama plana
@@ -75,6 +75,44 @@ Se desarrolla formularios para cada requerimiento con la siguiente nomenclatura 
 
 <!-- COMENTARIOS -->
 
+#### Diagrama entidad-relación simbology
+
+~~~sh
+
+| Entidad |
+|| Entidad debil ||
+< Relación >
+( Atributo )
+( _Atributo Key_ )
+(( Atributo Multivalue ))
+
+( Atributo compuesto ( 1 ) ( 2 ) ( 3 ) )
+
+{ Atributo calculado / deribado }
+
+| entidad | -- < relación > -- [1:1] -- | entidad |
+
+| entidad | -- < relación > --> [1:N] --> | entidad |
+
+| entidad | <-- < relación > --> [N:N] --> | entidad |
+
+~~~
+
+#### System diagram
+
+~~~sh
+
+
+
+~~~
+
+
+
+
+
+
+
+#### Version
 
 
     1. [] > Versionamiento de sistema
