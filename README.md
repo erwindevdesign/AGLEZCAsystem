@@ -10,11 +10,14 @@
 
 El sistema de gestión de datos - **SGD** -, se desarrolla como metodo para la recopilación, el almacenamiento y la consulta de datos para el desarrollo de indicadores clave **(KPI´s)** y el alcance de objetivos y resultados **(OKR´s)** en funsion de la integración de la información en la toma de desiciones en un entorno de producción real.
 
-La implementación de formularios para la recabación de datos se realiza en hojas de calculo Excel haciendo uso de macros creadas en **VBA** (visual basic for application). Esto nos permitira normailizar la base de datos relacionando entidades y dependencias, aún desconocidas por los usuario, eliminando información inecesaria para estructurar un sistema de gestión que pueda ser gestionado por el personal operativo del área dando seguimiento a los siguientes procesos y requerimientos de gestión:
+La implementación de formularios para la recabación de datos mediante macros implementadas en hojas de calculo  **VBA** (visual basic for application). Esto nos permitira crear las tablas a normailizar que posteriormente crearán la base de datos relacionando entidades y dependencias, eliminando información inecesaria para estructurar un sistema de gestión de procesos dando seguimiento a los siguientes requerimientos de gestión:
 
 > Seguimiento de producción
 
 	- Impresión JV33
+
+
+
 	- impresión UV
 	- corte cg-160
 	- corte cama plana
@@ -29,16 +32,12 @@ La implementación de formularios para la recabación de datos se realiza en hoj
 
 > Uso de  EPP
 
-	- mascarilla
-	- calzado de seguridad
-	- protección ocular
-	- protección auditiva
-	- guantes
-	- faja *
+	- mascarilla-antigases 	
 
 > Seguimiento de mantenimientos en equipos
 
-	- Mantt. de uso / residuos
+	- Mantt. de uso 
+	- residuos
 	- Mantt. preventivo
 	- Mantt. correctivo
 	- Temp. & Hum.
