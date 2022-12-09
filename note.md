@@ -221,47 +221,82 @@ Index
     - buenas practicas de docuemntación
     * img: pantallas de uso de formularios
 
-x. Espesificaciones de archivos tipo **salida** para impresión.
-- creación de intructivo.
-
-5. Solicitudes a **Almacén**
-    - **proc4**: procedimiento de registro de solicitud de matyeriales e insumos  **Almacén**.
-    - Trazabilidad de material impreso y en área.
-
-6. Formularios de registro
-    - repositorio / estructura
-    - descripción
-    - control de versiones
-    - sustitución, respaldo y documentación de errores.
-
-
-
-7. **EPP** (equipo d eprotección personal)
-    - Mantt. y lim,pieza de EPP
+5. **EPP** (equipo d eprotección personal)
     - **proc3**: procedimiento de registro de uso de epp.
     
 
+6. Registro de solicitudes a **Almacén**
+    - **proc4**: procedimiento de registro de solicitud de matyeriales e insumos  **Almacén**.
+    - Trazabilidad de material impreso y en área.
 
+7. Espesificaciones de archivos tipo **salida** para impresión.
+    - creación de intructivo.
 
-9. Procesos de operación de equipos.
+8. Procesos de operación de equipos.
     - **proc5**: procedimiento de operación en equipos de impresión, corte/suaje y laminado.
     * img: vectores de ejemplificación de operación en equipos, procesos a realizar, instrumentos y herramientas utilizadas. (linea/ estilo de diseño)
 
-10. Trazabilidad de material.
+7. Trazabilidad de material.
     - **proc6**: procedimiento de registro de consumo de material procesado.
     * img: imagenes de etiquetas de trazabilidad de material impreso.
     - registrro y disposición de sobre producción y merma en los procesos.
     - **proc7**: procedimiento de registrro y disposición de sobre producción y merma en los procesos.
 
-11. Mantenimiento (MANTT)
+8. Mantenimiento (MANTT)
     - **proc7**: procedimiento de registro de rezlización de mantenimientos.
     - Mantt. de uso.
     - Mantt. preventivo.
     - Mantt correctivo.
     * img: vectores de ejemplificación de matenimientos en equipos
 
-12. Indicadores
+9. Indicadores
 
-13. Workflows, metodologias, NOM y estandares internacionales.
+10. Workflows, metodologias, NOM y estandares internacionales.
 
-14. Footer
+11. Footer
+
+
+# Create  APP
+
+1. create virtual environment env
+
+~~~sh
+python3 -m venv env
+~~~
+
+2. run virtual environment
+
+~~~sh
+source env/bin/activate
+~~~
+
+3. install dependences
+
+~~~sh
+pip3 install -r requirements.txt
+~~~
+
+4. check the virtual environment connection origin
+
+~~~sh
+> which pip3
+
+result:
+/usr/bin/pip3
+
+../aglezca/app/env/bin/pip3
+
+~~~
+
+5. Create templates and statis content
+
+~~~sh
+mkdir static templates
+~~~
+
+6. 
+
+
+
+
+Tablas

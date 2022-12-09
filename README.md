@@ -71,7 +71,7 @@ Se desarrolla formularios para cada requerimiento con la siguiente nomenclatura 
 	- RM-U-PLOT-JV33-v0.0.1.xlsm
 
 
-#### Sistema de gestión de datos en producción. :floppy_disk: <a name="id2"></a>
+### Sistema de gestión de datos en producción. :floppy_disk: <a name="id2"></a>
 
 <!-- COMENTARIOS -->
 
@@ -79,22 +79,27 @@ Se desarrolla formularios para cada requerimiento con la siguiente nomenclatura 
 
 ~~~sh
 
-| Entidad |
-|| Entidad debil ||
+[ Entidad ]
+
+[[ Entidad debil ]]
+
 < Relación >
+
 ( Atributo )
+
 ( _Atributo Key_ )
+
 (( Atributo Multivalue ))
 
 ( Atributo compuesto ( 1 ) ( 2 ) ( 3 ) )
 
 { Atributo calculado / deribado }
 
-| entidad | -- < relación > -- [1:1] -- | entidad |
+[ entidad ] -- < relación > -- | 1:1 | -- [ entidad ]
 
-| entidad | -- < relación > --> [1:N] --> | entidad |
+[ entidad ] -- < relación > --> | 1:N | --> [ entidad ]
 
-| entidad | <-- < relación > --> [N:N] --> | entidad |
+[ entidad ] <-- < relación > --> | N:N | --> [ entidad ]
 
 ~~~
 
@@ -102,12 +107,88 @@ Se desarrolla formularios para cada requerimiento con la siguiente nomenclatura 
 
 ~~~sh
 
-
+  [ Orden de producción ] ------------- < recibe > --| 1:N |--> [ operador ]
+			^					|									 ^					
+   _________|__________			|					           	 ____|____
+   |		|		  |			|								|		  |
+( OP )    ( OC ) ( cliente )  	|						    ( firma ) ( coment )
+								|
+								|
+								|
+								|
+						 [ filenameIMP ] ----------------------- < implica > -- | 1:1 | -- [ perfilColor ]	                     
+								^							|									   ^
+			  __________________|__________________			|					  _________________|___________________				   
+  			  |		   |		|		  |   	   |		| 					  |		  |		   |         |        |
+          ( name ) ( cant ) ( ancho ) ( alto ) ( largo )    |				  ( pass ) ( dir ) ( speed ) ( MAPS ) ( comp )
+															|					  |_______|________|
+														    |							  |
+															|                       ( PerfilColor )*
+															|
+															|
+															|
+															|
+															|--- < crea > -- | M:1 | -- [ NoSerie ]*	    
+															|								 |
+															|		 ( SKU (equipo:P1) (op:633) (client:FEM) (count:001) )
+															|
+															|
+															|
+															|
+													  < requiere >
+															|
+															|
+														 | 1:1 |
+															|
+															|
+													  [ material ] --------------------------------- < requiere > --| 1:N |--> [ NoVale ]
+													  		^									|									^
+									   _____________________|_________________________		   	| 							        |	
+									   |		|			|   		|			 |		   	|						 ( No. Vale de Almacen )
+									( tipo ) ( base ) ( descrip1 ) ( descrip2 ) ( descrip3 )    |
+																							    |
+																								|
+																								|
+																								|--- < proviene > --| N:N |--> [ proveedor ]
+																								|									 ^
+																								|									 |
+																								|							   ( proveedor )
+																								|
+																								|
+																								|
+																								|
+																								---- < proviene > --| N:1 |--> [ lote ]
+																																   ^
+																																   |
+																										     ( lote (index:VBB) (base:Bco) (count:001) )
 
 ~~~
 
+#### Tables
+
+| | VIEW |
+| -- | -- |
+| + | Publico |
+| - | Privado |
+| # | Protegido |
+| / | Deribado |
+| ~ | Paquete |
+
+> estructure
+
+| Class name |
+| -- |
+| Atibutes |
+| Operation & methods |
 
 
+
+
+| | OP | dataType |
+| -- | -- | -- |
+| # | id | int |
+| + | op | string |
+| 
 
 
 
