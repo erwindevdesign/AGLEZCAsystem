@@ -184,12 +184,91 @@ Se desarrolla formularios para cada requerimiento con la siguiente nomenclatura 
 
 
 
-| | OP | dataType |
-| -- | -- | -- |
-| # | id | int |
-| + | op | string |
-| 
+| | operador | dataType | key |
+| -- | -- | -- | -- |
+| + | id | int | PK |
+| + | signature | string | |
+| + | coment | text | |
 
+| | op | dataType | key |
+| -- | -- | -- | -- |
+| + | id | int | PK |
+| + | op | string | |
+| # | oc | string | |
+| + | client | string | |
+| + | created_at | timestamp | | 
+| + | update_at | timestamp | |
+| + | operador_id | int | FK |
+
+| | noVale | dataType | key |
+| -- | -- | -- | -- |
+| + | id | int | PK |
+| + | noVale | int | |
+| + | created_at | timestamp | | 
+| + | update_at | timestamp | |
+| + | op_id | int | FK |
+| + | operador_id | int | FK |
+
+| | material | dataType | key |
+| -- | -- | -- | -- |
+| + | id | int | PK |
+| + | type | string | |
+| + | base | string | |
+| + | descript1 | string | |
+| + | descript2 | string | |
+| + | descript3 | string | |
+| + | width | tinyint | |
+| + | high | tinyint | |
+| + | proveedor | string | |	
+| + | lote | string compuesto | PK| 
+| + | created_at | timestamp | | 
+| + | update_at | timestamp | |
+| + | noVale_id | int | FK |
+| + | op_id | int | FK |
+
+| | lenght | dataType | key |
+| -- | -- | -- | -- |
+| + | id | int | PK |
+| + | lenght | tinyint | |
+| + | created_at | timestamp | | 
+| + | update_at | timestamp | |
+| + | lote_id | string compuesto | FK |
+| + | imp_id | int | FK |
+| + | material_id | int | FK |	
+
+| | file | dataTyoe | key |
+| -- | -- | -- | -- |
+| + | id | int | |
+| + | name | string | |
+| + | created_at | timestamp | | 
+| + | update_at | timestamp | |
+| + | operador_id | int | FK |
+| + | op_id | int | FK |
+
+| | imp | dataType | key |
+| -- | -- | -- | -- |
+| + | id | int | PK |
+| + | equipo | string | |
+| + | cant | int | |
+| + | width (m) | decimal | |
+| + | high (m) | decimal | |
+| + | lenth (ml) | decimal | |
+| + | perfil | string | |
+| + | MAPS | int | |
+| + | compentation | int |	|
+| + | created_at | timestamp | | 
+| + | update_at | timestamp | |
+| + | lote_id | string compuesto | FK |
+
+| | noSerie | dataType | key |
+| -- | -- | -- | -- |
+| + | id | int | PK |
+| + | SKU | string compuesto | PK |
+| + | created_at | timestamp | | 
+| + | update_at | timestamp | |
+| + | material_id | int | FK |	
+| + | op_id | int | FK |
+| + | imp_id | int | FK |
 
 
 
